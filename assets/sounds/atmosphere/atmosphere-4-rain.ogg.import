@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/atmosphere-4-rain.ogg-8b4dd414a3283115ca92873bd496d8e5.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/atmosphere/atmosphere-4-rain.ogg"
+dest_files=[ "res://.import/atmosphere-4-rain.ogg-8b4dd414a3283115ca92873bd496d8e5.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

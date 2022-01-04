@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/door-banging.ogg-4b743c78acdc85a902224039a17f50ee.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/random/door-banging.ogg"
+dest_files=[ "res://.import/door-banging.ogg-4b743c78acdc85a902224039a17f50ee.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

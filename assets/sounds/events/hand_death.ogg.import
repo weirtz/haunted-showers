@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/hand_death.ogg-78ef1070962813e0704efaff86c8b761.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/events/hand_death.ogg"
+dest_files=[ "res://.import/hand_death.ogg-78ef1070962813e0704efaff86c8b761.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

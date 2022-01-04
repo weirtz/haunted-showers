@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/5. Creeping Dread_01.ogg-b01b3b55cdec91fdccf4812004b5a9cd.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/music/5. Creeping Dread_01.ogg"
+dest_files=[ "res://.import/5. Creeping Dread_01.ogg-b01b3b55cdec91fdccf4812004b5a9cd.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

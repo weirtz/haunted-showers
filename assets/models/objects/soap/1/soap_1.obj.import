@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/soap_1.obj-d3457420714a84209a4d8e79d873e673.mesh"
+
+[deps]
+
+files=[ "res://.import/soap_1.obj-d3457420714a84209a4d8e79d873e673.mesh" ]
+
+source_file="res://assets/models/objects/soap/1/soap_1.obj"
+dest_files=[ "res://.import/soap_1.obj-d3457420714a84209a4d8e79d873e673.mesh", "res://.import/soap_1.obj-d3457420714a84209a4d8e79d873e673.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

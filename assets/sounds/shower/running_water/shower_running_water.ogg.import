@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/shower_running_water.ogg-cd38418fba4b61de38fa5f7ec99fd443.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/shower/running_water/shower_running_water.ogg"
+dest_files=[ "res://.import/shower_running_water.ogg-cd38418fba4b61de38fa5f7ec99fd443.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

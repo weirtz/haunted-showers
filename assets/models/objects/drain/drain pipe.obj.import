@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/drain pipe.obj-9b704499ed3324195da258a780c680e5.mesh"
+
+[deps]
+
+files=[ "res://.import/drain pipe.obj-9b704499ed3324195da258a780c680e5.mesh" ]
+
+source_file="res://assets/models/objects/drain/drain pipe.obj"
+dest_files=[ "res://.import/drain pipe.obj-9b704499ed3324195da258a780c680e5.mesh", "res://.import/drain pipe.obj-9b704499ed3324195da258a780c680e5.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

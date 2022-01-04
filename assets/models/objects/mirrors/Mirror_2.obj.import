@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Mirror_2.obj-0b7b51973069f205483770cfd667e624.mesh"
+
+[deps]
+
+files=[ "res://.import/Mirror_2.obj-0b7b51973069f205483770cfd667e624.mesh" ]
+
+source_file="res://assets/models/objects/mirrors/Mirror_2.obj"
+dest_files=[ "res://.import/Mirror_2.obj-0b7b51973069f205483770cfd667e624.mesh", "res://.import/Mirror_2.obj-0b7b51973069f205483770cfd667e624.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

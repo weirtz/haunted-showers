@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/knob_3.ogg-1bcc765d0cbe4615df403f01c33fc575.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/shower/knob/knob_3.ogg"
+dest_files=[ "res://.import/knob_3.ogg-1bcc765d0cbe4615df403f01c33fc575.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

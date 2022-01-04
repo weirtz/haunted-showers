@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/11. Realization_01.ogg-433e0db077a3f3d51f9fb9a756d07eff.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/music/11. Realization_01.ogg"
+dest_files=[ "res://.import/11. Realization_01.ogg-433e0db077a3f3d51f9fb9a756d07eff.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

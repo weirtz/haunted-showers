@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/melon.obj-01c1637f76ac7f4413ed96dc6b249d12.mesh"
+
+[deps]
+
+files=[ "res://.import/melon.obj-01c1637f76ac7f4413ed96dc6b249d12.mesh" ]
+
+source_file="res://assets/models/objects/watermelon/melon.obj"
+dest_files=[ "res://.import/melon.obj-01c1637f76ac7f4413ed96dc6b249d12.mesh", "res://.import/melon.obj-01c1637f76ac7f4413ed96dc6b249d12.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

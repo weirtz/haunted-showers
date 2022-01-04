@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/13. Old Souls_01.ogg-2f9306786344674499f5cca2e2315e44.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/music/13. Old Souls_01.ogg"
+dest_files=[ "res://.import/13. Old Souls_01.ogg-2f9306786344674499f5cca2e2315e44.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

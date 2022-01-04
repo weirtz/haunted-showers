@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/6. The Mouth of Hell_01.ogg-be6784d75371f2cc9da3e4df1f1dad4d.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/music/6. The Mouth of Hell_01.ogg"
+dest_files=[ "res://.import/6. The Mouth of Hell_01.ogg-be6784d75371f2cc9da3e4df1f1dad4d.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

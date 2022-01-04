@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/lightswitch.obj-aa70a807aaf7a65913845e67bbdc6590.mesh"
+
+[deps]
+
+files=[ "res://.import/lightswitch.obj-aa70a807aaf7a65913845e67bbdc6590.mesh" ]
+
+source_file="res://assets/light_switch/lightswitch.obj"
+dest_files=[ "res://.import/lightswitch.obj-aa70a807aaf7a65913845e67bbdc6590.mesh", "res://.import/lightswitch.obj-aa70a807aaf7a65913845e67bbdc6590.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

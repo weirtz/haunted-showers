@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/teethpaste.obj-0ffc32fbb397296c2f85367cdadb1ae7.mesh"
+
+[deps]
+
+files=[ "res://.import/teethpaste.obj-0ffc32fbb397296c2f85367cdadb1ae7.mesh" ]
+
+source_file="res://assets/models/objects/toothpaste/teethpaste.obj"
+dest_files=[ "res://.import/teethpaste.obj-0ffc32fbb397296c2f85367cdadb1ae7.mesh", "res://.import/teethpaste.obj-0ffc32fbb397296c2f85367cdadb1ae7.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
