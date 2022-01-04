@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/floor.obj-220110dd7663556749910baef357bba3.mesh"
+
+[deps]
+
+files=[ "res://.import/floor.obj-220110dd7663556749910baef357bba3.mesh" ]
+
+source_file="res://scenes/bathroom_5/floor.obj"
+dest_files=[ "res://.import/floor.obj-220110dd7663556749910baef357bba3.mesh", "res://.import/floor.obj-220110dd7663556749910baef357bba3.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

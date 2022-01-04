@@ -1,0 +1,397 @@
+[gd_scene load_steps=51 format=2]
+
+[ext_resource path="res://scenes/menus/ingame/PauseMenu.cs" type="Script" id=1]
+[ext_resource path="res://assets/menus/paused/Asset 1ghost-icon.png" type="Texture" id=2]
+[ext_resource path="res://assets/gui/fonts/main menu.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://scripts/gui/CustomButton.cs" type="Script" id=4]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00000.png" type="Texture" id=5]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00001.png" type="Texture" id=6]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00002.png" type="Texture" id=7]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00003.png" type="Texture" id=8]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00004.png" type="Texture" id=9]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00005.png" type="Texture" id=10]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00006.png" type="Texture" id=11]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00007.png" type="Texture" id=12]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00008.png" type="Texture" id=13]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00009.png" type="Texture" id=14]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00010.png" type="Texture" id=15]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00011.png" type="Texture" id=16]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00012.png" type="Texture" id=17]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00013.png" type="Texture" id=18]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00014.png" type="Texture" id=19]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00015.png" type="Texture" id=20]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00016.png" type="Texture" id=21]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00017.png" type="Texture" id=22]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00018.png" type="Texture" id=23]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00019.png" type="Texture" id=24]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00020.png" type="Texture" id=25]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00021.png" type="Texture" id=26]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00022.png" type="Texture" id=27]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00023.png" type="Texture" id=28]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00024.png" type="Texture" id=29]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00025.png" type="Texture" id=30]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00026.png" type="Texture" id=31]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00027.png" type="Texture" id=32]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00028.png" type="Texture" id=33]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00029.png" type="Texture" id=34]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00030.png" type="Texture" id=35]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00031.png" type="Texture" id=36]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00032.png" type="Texture" id=37]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00033.png" type="Texture" id=38]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00034.png" type="Texture" id=39]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00035.png" type="Texture" id=40]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00036.png" type="Texture" id=41]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00037.png" type="Texture" id=42]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00038.png" type="Texture" id=43]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00039.png" type="Texture" id=44]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00040.png" type="Texture" id=45]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00041.png" type="Texture" id=46]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00042.png" type="Texture" id=47]
+
+[sub_resource type="DynamicFont" id=1]
+
+size = 125
+use_mipmaps = false
+use_filter = true
+font_data = ExtResource( 3 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="DynamicFont" id=2]
+
+size = 125
+use_mipmaps = false
+use_filter = true
+font_data = ExtResource( 3 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="SpriteFrames" id=3]
+
+animations = [ {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ) ],
+"loop": true,
+"name": "default",
+"speed": 60.0
+} ]
+
+[node name="PauseMenu" type="CanvasLayer"]
+
+layer = 1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+script = ExtResource( 1 )
+
+[node name="BlockMouseInput" type="ColorRect" parent="." index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -1480.0
+margin_top = -1790.0
+margin_right = 3520.0
+margin_bottom = 3210.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0, 0, 0, 0.77902 )
+_sections_unfolded = [ "Mouse", "Visibility" ]
+
+[node name="PauseMessage" type="Control" parent="." index="1"]
+
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Anchor", "Mouse", "Rect" ]
+
+[node name="TextureRect" type="TextureRect" parent="PauseMessage" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -100.0
+margin_top = -240.0
+margin_right = 361.0
+margin_bottom = 228.0
+rect_scale = Vector2( 0.35, 0.35 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 2 )
+stretch_mode = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="PauseTitle" type="HBoxContainer" parent="PauseMessage" index="1"]
+
+editor/display_folded = true
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -382.0
+margin_top = -67.0
+margin_right = 350.0
+margin_bottom = 58.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+alignment = 1
+_sections_unfolded = [ "Mouse" ]
+
+[node name="Label" type="Label" parent="PauseMessage/PauseTitle" index="0"]
+
+self_modulate = Color( 0.878906, 0.284958, 0.284958, 1 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_right = 600.0
+margin_bottom = 125.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+text = "PAUSED"
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Visibility", "custom_fonts" ]
+
+[node name="Press ESC to resume" type="Label" parent="PauseMessage" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -165.0
+margin_top = 70.0
+margin_right = 827.0
+margin_bottom = 195.0
+rect_scale = Vector2( 0.3, 0.3 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 2 )
+text = "Press ESC to resume"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Mouse", "Rect", "Size Flags", "Visibility", "custom_fonts", "custom_styles" ]
+
+[node name="PauseMenu" type="Control" parent="." index="2"]
+
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 0.0
+anchor_bottom = 1.0
+margin_top = -1080.0
+margin_right = 40.0
+margin_bottom = -1040.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Anchor" ]
+
+[node name="VBox" type="VBoxContainer" parent="PauseMenu" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 30.0
+margin_top = 910.0
+margin_right = 403.0
+margin_bottom = 1114.0
+rect_scale = Vector2( 0.75, 0.75 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+alignment = 0
+_sections_unfolded = [ "Mouse" ]
+
+[node name="Settings" type="Container" parent="PauseMenu/VBox" index="0"]
+
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 373.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 0, 100 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 4 )
+_sections_unfolded = [ "Rect", "Visibility" ]
+
+[node name="Label" type="Label" parent="PauseMenu/VBox/Settings" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 578.0
+margin_bottom = 139.0
+rect_scale = Vector2( 0.6, 0.6 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 2 )
+text = "SETTINGS"
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Margin", "Mouse", "Rect", "Visibility", "custom_fonts" ]
+
+[node name="AnimatedSelect" type="Control" parent="PauseMenu/VBox/Settings" index="1"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 334.0
+margin_top = 2.0
+margin_right = 584.0
+margin_bottom = 127.0
+rect_min_size = Vector2( 250, 125 )
+rect_scale = Vector2( 0.6, 0.6 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="PauseMenu/VBox/Settings/AnimatedSelect" index="0"]
+
+position = Vector2( 129.104, 73.7635 )
+scale = Vector2( 0.71866, 0.71866 )
+frames = SubResource( 3 )
+animation = "default"
+frame = 19
+playing = true
+_sections_unfolded = [ "Transform" ]
+
+[node name="Exit" type="Container" parent="PauseMenu/VBox" index="1"]
+
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 104.0
+margin_right = 373.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 0, 100 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 4 )
+_sections_unfolded = [ "Mouse", "Rect", "Visibility" ]
+
+[node name="Label" type="Label" parent="PauseMenu/VBox/Exit" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_bottom = 132.0
+rect_scale = Vector2( 0.6, 0.6 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 2 )
+text = "EXIT"
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Margin", "Mouse", "Visibility", "custom_fonts" ]
+
+[node name="AnimatedSelect" type="Control" parent="PauseMenu/VBox/Exit" index="1"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 159.0
+margin_top = 1.0
+margin_right = 409.0
+margin_bottom = 126.0
+rect_min_size = Vector2( 250, 125 )
+rect_scale = Vector2( 0.6, 0.6 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Mouse", "Rect" ]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="PauseMenu/VBox/Exit/AnimatedSelect" index="0"]
+
+position = Vector2( 122.027, 70.2253 )
+scale = Vector2( 0.71866, 0.71866 )
+frames = SubResource( 3 )
+animation = "default"
+frame = 8
+playing = true
+_sections_unfolded = [ "Transform" ]
+
+

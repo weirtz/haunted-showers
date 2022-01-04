@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/hammer.obj-c6007a93b8d312ee717a7ff474c164cd.mesh"
+
+[deps]
+
+files=[ "res://.import/hammer.obj-c6007a93b8d312ee717a7ff474c164cd.mesh" ]
+
+source_file="res://scenes/bathroom_4/hammer.obj"
+dest_files=[ "res://.import/hammer.obj-c6007a93b8d312ee717a7ff474c164cd.mesh", "res://.import/hammer.obj-c6007a93b8d312ee717a7ff474c164cd.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Player_melon_head.obj-da9ac87d3b46ace4a206d0c1d02b2435.mesh"
+
+[deps]
+
+files=[ "res://.import/Player_melon_head.obj-da9ac87d3b46ace4a206d0c1d02b2435.mesh" ]
+
+source_file="res://scenes/melonhead/Player_melon_head.obj"
+dest_files=[ "res://.import/Player_melon_head.obj-da9ac87d3b46ace4a206d0c1d02b2435.mesh", "res://.import/Player_melon_head.obj-da9ac87d3b46ace4a206d0c1d02b2435.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

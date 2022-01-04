@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/light-shine.obj-989110762781d15652734b846e64f673.mesh"
+
+[deps]
+
+files=[ "res://.import/light-shine.obj-989110762781d15652734b846e64f673.mesh" ]
+
+source_file="res://scenes/bathroom_5/light-shine.obj"
+dest_files=[ "res://.import/light-shine.obj-989110762781d15652734b846e64f673.mesh", "res://.import/light-shine.obj-989110762781d15652734b846e64f673.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

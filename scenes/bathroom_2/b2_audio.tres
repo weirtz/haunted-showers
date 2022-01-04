@@ -1,0 +1,144 @@
+[gd_resource type="AudioBusLayout" load_steps=9 format=2]
+
+[sub_resource type="AudioEffectStereoEnhance" id=1]
+
+resource_name = "StereoEnhance"
+pan_pullout = 1.0
+time_pullout_ms = 0.0
+surround = 1.0
+_sections_unfolded = [ "Resource" ]
+
+[sub_resource type="AudioEffectStereoEnhance" id=2]
+
+resource_name = "StereoEnhance"
+pan_pullout = 1.0
+time_pullout_ms = 0.0
+surround = 1.0
+
+[sub_resource type="AudioEffectStereoEnhance" id=3]
+
+resource_name = "StereoEnhance"
+pan_pullout = 4.0
+time_pullout_ms = 0.0
+surround = 0.0
+
+[sub_resource type="AudioEffectEQ" id=4]
+
+resource_name = "EQ"
+band_db/32_hz = 24.0
+band_db/100_hz = 24.0
+band_db/320_hz = -60.0
+band_db/1000_hz = -60.0
+band_db/3200_hz = -60.0
+band_db/10000_hz = -60.0
+_sections_unfolded = [ "band_db" ]
+
+[sub_resource type="AudioEffectNotchFilter" id=5]
+
+resource_name = "NotchFilter"
+cutoff_hz = 2000.0
+resonance = 0.5
+gain = 1.0
+db = 0
+
+[sub_resource type="AudioEffectDistortion" id=6]
+
+resource_name = "Distortion"
+mode = 0
+pre_gain = 0.0
+keep_hf_hz = 16000.0
+drive = 0.0
+post_gain = 0.0
+
+[sub_resource type="AudioEffectChorus" id=7]
+
+resource_name = "Chorus"
+voice_count = 4
+dry = 0.0
+wet = 0.5
+voice/1/delay_ms = 15.0
+voice/1/rate_hz = 0.8
+voice/1/depth_ms = 2.0
+voice/1/level_db = 0.0
+voice/1/cutoff_hz = 8000.0
+voice/1/pan = -0.5
+voice/2/delay_ms = 20.0
+voice/2/rate_hz = 1.2
+voice/2/depth_ms = 3.0
+voice/2/level_db = 0.0
+voice/2/cutoff_hz = 8000.0
+voice/2/pan = 0.5
+voice/3/delay_ms = 12.0
+voice/3/rate_hz = 1.0
+voice/3/depth_ms = 0.0
+voice/3/level_db = 0.0
+voice/3/cutoff_hz = 16000.0
+voice/3/pan = 0.0
+voice/4/delay_ms = 12.0
+voice/4/rate_hz = 1.0
+voice/4/depth_ms = 0.0
+voice/4/level_db = 0.0
+voice/4/cutoff_hz = 16000.0
+voice/4/pan = 0.0
+
+[sub_resource type="AudioEffectReverb" id=8]
+
+resource_name = "Reverb"
+predelay_msec = 150.0
+predelay_feedback = 0.4
+room_size = 1.0
+damping = 0.0
+spread = 1.0
+hipass = 1.0
+dry = 0.0
+wet = 0.57
+
+[resource]
+
+bus/0/name = "Master"
+bus/0/solo = false
+bus/0/mute = false
+bus/0/bypass_fx = false
+bus/0/volume_db = 0.0
+bus/0/send = ""
+bus/1/name = "rain"
+bus/1/solo = false
+bus/1/mute = false
+bus/1/bypass_fx = false
+bus/1/volume_db = 0.0
+bus/1/send = "Master"
+bus/1/effect/0/effect = SubResource( 1 )
+bus/1/effect/0/enabled = true
+bus/2/name = "outside"
+bus/2/solo = false
+bus/2/mute = false
+bus/2/bypass_fx = false
+bus/2/volume_db = 6.3
+bus/2/send = "Master"
+bus/3/name = "special-sounds"
+bus/3/solo = false
+bus/3/mute = false
+bus/3/bypass_fx = false
+bus/3/volume_db = 0.0
+bus/3/send = "Master"
+bus/3/effect/0/effect = SubResource( 2 )
+bus/3/effect/0/enabled = true
+bus/4/name = "music-b3"
+bus/4/solo = false
+bus/4/mute = true
+bus/4/bypass_fx = false
+bus/4/volume_db = -20.6
+bus/4/send = "Master"
+bus/4/effect/0/effect = SubResource( 3 )
+bus/4/effect/0/enabled = true
+bus/4/effect/1/effect = SubResource( 4 )
+bus/4/effect/1/enabled = true
+bus/4/effect/2/effect = SubResource( 5 )
+bus/4/effect/2/enabled = false
+bus/4/effect/3/effect = SubResource( 6 )
+bus/4/effect/3/enabled = false
+bus/4/effect/4/effect = SubResource( 7 )
+bus/4/effect/4/enabled = false
+bus/4/effect/5/effect = SubResource( 8 )
+bus/4/effect/5/enabled = true
+

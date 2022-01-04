@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/models/objects/soap/3/soap.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://assets/models/objects/soap/3/soap_albedo.jpg" type="Texture" id=2]
+[ext_resource path="res://assets/models/objects/soap/3/soap_normal.jpg" type="Texture" id=3]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 2 )
+roughness = 0.41
+normal_enabled = true
+normal_scale = -0.43
+normal_texture = ExtResource( 3 )
+
+[node name="soap bar" type="MeshInstance"]
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )

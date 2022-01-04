@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/player-texturing.obj-0a5d3934f91f5d697cc5c9029edfb83a.mesh"
+
+[deps]
+
+files=[ "res://.import/player-texturing.obj-0a5d3934f91f5d697cc5c9029edfb83a.mesh" ]
+
+source_file="res://scenes/dev_maps_/Brendan/player-texturing.obj"
+dest_files=[ "res://.import/player-texturing.obj-0a5d3934f91f5d697cc5c9029edfb83a.mesh", "res://.import/player-texturing.obj-0a5d3934f91f5d697cc5c9029edfb83a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

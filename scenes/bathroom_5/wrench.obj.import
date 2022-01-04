@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wrench.obj-2884dbb45a07a6efb5372c59841dae65.mesh"
+
+[deps]
+
+files=[ "res://.import/wrench.obj-2884dbb45a07a6efb5372c59841dae65.mesh" ]
+
+source_file="res://scenes/bathroom_5/wrench.obj"
+dest_files=[ "res://.import/wrench.obj-2884dbb45a07a6efb5372c59841dae65.mesh", "res://.import/wrench.obj-2884dbb45a07a6efb5372c59841dae65.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scripts/events/ToiletGhostEvent.cs" type="Script" id=1]
+[ext_resource path="res://scripts/events/SoundEvent.cs" type="Script" id=2]
+
+[node name="ToiletGhost" type="Node"]
+
+editor/display_folded = true
+script = ExtResource( 1 )
+manualStart = false
+signalStart = false
+signal = "Null"
+source = NodePath("Null")
+toiletghostPath = NodePath("../../../../../toilet_ghost")
+
+[node name="FlushDelay" type="Timer" parent="." index="0"]
+
+process_mode = 1
+wait_time = 0.5
+one_shot = true
+autostart = false
+_sections_unfolded = [ "Pause" ]
+
+[node name="SoundFlush" type="Node" parent="." index="1"]
+
+script = ExtResource( 2 )
+manualStart = false
+signalStart = false
+signal = "timeout"
+source = NodePath("../FlushDelay")
+audioPlayerSource = NodePath("../../../../../Physical/Furniture/Toilet/AudioStreamPlayer3D")
+
+[node name="TriggerBurnDelay" type="Timer" parent="." index="2"]
+
+process_mode = 1
+wait_time = 2.0
+one_shot = true
+autostart = false
+
+

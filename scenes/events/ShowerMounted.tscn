@@ -1,0 +1,101 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://scripts/events/ShowerMounted.cs" type="Script" id=1]
+[ext_resource path="res://scripts/events/ShowerOn.cs" type="Script" id=2]
+[ext_resource path="res://scripts/events/Cleaning.cs" type="Script" id=3]
+[ext_resource path="res://scripts/events/CleaningHead.cs" type="Script" id=4]
+[ext_resource path="res://scripts/events/CleaningArmLeft.cs" type="Script" id=5]
+[ext_resource path="res://scripts/events/CleaningArmRight.cs" type="Script" id=6]
+[ext_resource path="res://scripts/events/CleaningTorso.cs" type="Script" id=7]
+[ext_resource path="res://scripts/events/CleaningLegs.cs" type="Script" id=8]
+[ext_resource path="res://scripts/events/DrainHandEvent.cs" type="Script" id=9]
+[ext_resource path="res://scripts/events/Event.cs" type="Script" id=10]
+
+[node name="ShowerMounted" type="Node"]
+
+editor/display_folded = true
+script = ExtResource( 1 )
+manualStart = false
+signalStart = true
+signal = "entered_shower"
+source = NodePath("../../../../Player")
+
+[node name="ShowerOn" type="Node" parent="." index="0"]
+
+editor/display_folded = true
+script = ExtResource( 2 )
+manualStart = false
+signalStart = true
+signal = "interact_knob"
+source = NodePath("../../../../../Player")
+
+[node name="Cleaning" type="Node" parent="ShowerOn" index="0"]
+
+editor/display_folded = true
+script = ExtResource( 3 )
+manualStart = false
+signalStart = true
+signal = "pickup_soap"
+source = NodePath("../../../../../../Player")
+
+[node name="CleaningHead" type="Node" parent="ShowerOn/Cleaning" index="0"]
+
+script = ExtResource( 4 )
+manualStart = false
+signalStart = true
+signal = "head_enter"
+source = null
+
+[node name="CleaningArmLeft" type="Node" parent="ShowerOn/Cleaning" index="1"]
+
+script = ExtResource( 5 )
+manualStart = false
+signalStart = true
+signal = "arm_L_enter"
+source = null
+
+[node name="CleaningArmRight" type="Node" parent="ShowerOn/Cleaning" index="2"]
+
+script = ExtResource( 6 )
+manualStart = false
+signalStart = true
+signal = "arm_R_enter"
+source = null
+
+[node name="CleaningTorso" type="Node" parent="ShowerOn/Cleaning" index="3"]
+
+script = ExtResource( 7 )
+manualStart = false
+signalStart = true
+signal = "torso_enter"
+source = null
+
+[node name="CleaningLegs" type="Node" parent="ShowerOn/Cleaning" index="4"]
+
+script = ExtResource( 8 )
+manualStart = false
+signalStart = true
+signal = "legs_enter"
+source = null
+
+[node name="DrainHand" type="Node" parent="ShowerOn/Cleaning" index="5"]
+
+editor/display_folded = true
+script = ExtResource( 9 )
+_sections_unfolded = [ "Pause" ]
+manualStart = false
+signalStart = false
+signal = null
+source = null
+drainhandPath = NodePath("../../../../../../../drain_hand")
+creepSpeed = 0.1
+
+[node name="DeathByHand" type="Node" parent="ShowerOn/Cleaning/DrainHand" index="0"]
+
+script = ExtResource( 10 )
+manualStart = false
+signalStart = false
+signal = "grabbed_player"
+source = null
+
+

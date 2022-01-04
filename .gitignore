@@ -1,0 +1,7 @@
+.import/
+.mono/
+.vs/
+*.directory
+export.cfg
+export_presets.cfg
+

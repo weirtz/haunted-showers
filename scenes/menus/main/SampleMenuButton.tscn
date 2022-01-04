@@ -1,0 +1,147 @@
+[gd_scene load_steps=48 format=2]
+
+[ext_resource path="res://scripts/gui/CustomButton.cs" type="Script" id=1]
+[ext_resource path="res://assets/gui/fonts/main menu.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00000.png" type="Texture" id=3]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00001.png" type="Texture" id=4]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00002.png" type="Texture" id=5]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00003.png" type="Texture" id=6]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00004.png" type="Texture" id=7]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00005.png" type="Texture" id=8]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00006.png" type="Texture" id=9]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00007.png" type="Texture" id=10]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00008.png" type="Texture" id=11]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00009.png" type="Texture" id=12]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00010.png" type="Texture" id=13]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00011.png" type="Texture" id=14]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00012.png" type="Texture" id=15]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00013.png" type="Texture" id=16]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00014.png" type="Texture" id=17]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00015.png" type="Texture" id=18]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00016.png" type="Texture" id=19]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00017.png" type="Texture" id=20]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00018.png" type="Texture" id=21]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00019.png" type="Texture" id=22]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00020.png" type="Texture" id=23]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00021.png" type="Texture" id=24]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00022.png" type="Texture" id=25]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00023.png" type="Texture" id=26]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00024.png" type="Texture" id=27]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00025.png" type="Texture" id=28]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00026.png" type="Texture" id=29]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00027.png" type="Texture" id=30]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00028.png" type="Texture" id=31]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00029.png" type="Texture" id=32]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00030.png" type="Texture" id=33]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00031.png" type="Texture" id=34]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00032.png" type="Texture" id=35]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00033.png" type="Texture" id=36]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00034.png" type="Texture" id=37]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00035.png" type="Texture" id=38]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00036.png" type="Texture" id=39]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00037.png" type="Texture" id=40]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00038.png" type="Texture" id=41]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00039.png" type="Texture" id=42]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00040.png" type="Texture" id=43]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00041.png" type="Texture" id=44]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00042.png" type="Texture" id=45]
+
+
+
+
+
+
+
+
+
+
+
+[sub_resource type="DynamicFont" id=3]
+
+size = 125
+use_mipmaps = false
+use_filter = true
+font_data = ExtResource( 2 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="SpriteFrames" id=2]
+
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ) ],
+"loop": true,
+"name": "default",
+"speed": 60.0
+} ]
+
+[node name="HBoxContainer" type="HBoxContainer"]
+
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 805.0
+margin_bottom = 125.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+alignment = 0
+script = ExtResource( 1 )
+_sections_unfolded = [ "Mouse", "Visibility" ]
+
+[node name="Label" type="Label" parent="." index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 303.0
+margin_bottom = 125.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 3 )
+text = "TEXT"
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Mouse", "Visibility", "custom_fonts" ]
+
+[node name="AnimatedSelect" type="Control" parent="." index="1"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 302.0
+margin_right = 552.0
+margin_bottom = 125.0
+rect_min_size = Vector2( 250, 125 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Mouse" ]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="AnimatedSelect" index="0"]
+
+position = Vector2( 122.027, 70.2253 )
+scale = Vector2( 0.71866, 0.71866 )
+frames = SubResource( 2 )
+animation = "default"
+frame = 38
+playing = true
+_sections_unfolded = [ "Transform" ]
+
+

@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/paste.obj-1f61fc0929894d10382b67908fd2f169.mesh"
+
+[deps]
+
+files=[ "res://.import/paste.obj-1f61fc0929894d10382b67908fd2f169.mesh" ]
+
+source_file="res://scenes/bathroom_3/assets/paste.obj"
+dest_files=[ "res://.import/paste.obj-1f61fc0929894d10382b67908fd2f169.mesh", "res://.import/paste.obj-1f61fc0929894d10382b67908fd2f169.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

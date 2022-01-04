@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/b2-floor.obj-f06f72372f7ff25701f1e8050305d94f.mesh"
+
+[deps]
+
+files=[ "res://.import/b2-floor.obj-f06f72372f7ff25701f1e8050305d94f.mesh" ]
+
+source_file="res://scenes/bathroom_2/assets/b2-floor.obj"
+dest_files=[ "res://.import/b2-floor.obj-f06f72372f7ff25701f1e8050305d94f.mesh", "res://.import/b2-floor.obj-f06f72372f7ff25701f1e8050305d94f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

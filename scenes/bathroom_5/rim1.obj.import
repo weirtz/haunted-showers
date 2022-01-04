@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/rim1.obj-aa19129a34fcbd1f8a8cc75c5bcf26cd.mesh"
+
+[deps]
+
+files=[ "res://.import/rim1.obj-aa19129a34fcbd1f8a8cc75c5bcf26cd.mesh" ]
+
+source_file="res://scenes/bathroom_5/rim1.obj"
+dest_files=[ "res://.import/rim1.obj-aa19129a34fcbd1f8a8cc75c5bcf26cd.mesh", "res://.import/rim1.obj-aa19129a34fcbd1f8a8cc75c5bcf26cd.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

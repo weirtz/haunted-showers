@@ -1,0 +1,426 @@
+[gd_scene load_steps=52 format=2]
+
+[ext_resource path="res://scenes/menus/ingame/LevelComplete.cs" type="Script" id=1]
+[ext_resource path="res://assets/sounds/toilet/toilet-trans.ogg" type="AudioStream" id=2]
+[ext_resource path="res://assets/gui/fonts/main menu.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://scripts/gui/CustomButton.cs" type="Script" id=4]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00000.png" type="Texture" id=5]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00001.png" type="Texture" id=6]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00002.png" type="Texture" id=7]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00003.png" type="Texture" id=8]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00004.png" type="Texture" id=9]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00005.png" type="Texture" id=10]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00006.png" type="Texture" id=11]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00007.png" type="Texture" id=12]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00008.png" type="Texture" id=13]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00009.png" type="Texture" id=14]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00010.png" type="Texture" id=15]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00011.png" type="Texture" id=16]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00012.png" type="Texture" id=17]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00013.png" type="Texture" id=18]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00014.png" type="Texture" id=19]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00015.png" type="Texture" id=20]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00016.png" type="Texture" id=21]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00017.png" type="Texture" id=22]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00018.png" type="Texture" id=23]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00019.png" type="Texture" id=24]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00020.png" type="Texture" id=25]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00021.png" type="Texture" id=26]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00022.png" type="Texture" id=27]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00023.png" type="Texture" id=28]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00024.png" type="Texture" id=29]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00025.png" type="Texture" id=30]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00026.png" type="Texture" id=31]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00027.png" type="Texture" id=32]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00028.png" type="Texture" id=33]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00029.png" type="Texture" id=34]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00030.png" type="Texture" id=35]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00031.png" type="Texture" id=36]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00032.png" type="Texture" id=37]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00033.png" type="Texture" id=38]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00034.png" type="Texture" id=39]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00035.png" type="Texture" id=40]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00036.png" type="Texture" id=41]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00037.png" type="Texture" id=42]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00038.png" type="Texture" id=43]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00039.png" type="Texture" id=44]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00040.png" type="Texture" id=45]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00041.png" type="Texture" id=46]
+[ext_resource path="res://scenes/menus/main/assets/pointer/finger_00042.png" type="Texture" id=47]
+
+[sub_resource type="DynamicFont" id=1]
+
+size = 125
+use_mipmaps = false
+use_filter = true
+font_data = ExtResource( 3 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="DynamicFont" id=2]
+
+size = 125
+use_mipmaps = false
+use_filter = true
+font_data = ExtResource( 3 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="Animation" id=3]
+
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[sub_resource type="SpriteFrames" id=4]
+
+animations = [ {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ) ],
+"loop": true,
+"name": "default",
+"speed": 60.0
+} ]
+
+[node name="LevelComplete" type="CanvasLayer"]
+
+layer = 1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+script = ExtResource( 1 )
+
+[node name="BlockMouseInput" type="ColorRect" parent="." index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -1489.0
+margin_top = -1805.0
+margin_right = 3511.0
+margin_bottom = 3195.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0.207031, 0.207031, 0.207031, 0.867373 )
+_sections_unfolded = [ "Mouse" ]
+
+[node name="DisplayTimer" type="Timer" parent="." index="1"]
+
+process_mode = 1
+wait_time = 5.0
+one_shot = true
+autostart = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="2"]
+
+stream = ExtResource( 2 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="Menu" type="Control" parent="." index="3"]
+
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Anchor", "Mouse", "Rect" ]
+
+[node name="PauseTitle" type="HBoxContainer" parent="Menu" index="0"]
+
+editor/display_folded = true
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -722.0
+margin_top = -177.0
+margin_right = 688.0
+margin_bottom = -52.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+alignment = 1
+_sections_unfolded = [ "Mouse" ]
+
+[node name="Label" type="Label" parent="Menu/PauseTitle" index="0"]
+
+self_modulate = Color( 0.363281, 0.041153, 0.041153, 1 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 353.0
+margin_right = 1056.0
+margin_bottom = 125.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+text = "CONGRATS!"
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Visibility", "custom_fonts" ]
+
+[node name="VBox" type="Control" parent="Menu" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -313.0
+margin_top = -37.0
+margin_right = 577.0
+margin_bottom = 404.0
+rect_scale = Vector2( 0.75, 0.75 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Mouse", "Rect" ]
+
+[node name="Message" type="Label" parent="Menu" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -497.0
+margin_top = -349.0
+margin_right = 711.0
+margin_bottom = -224.0
+rect_scale = Vector2( 0.8, 0.8 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 2 )
+text = "You're so clean! So alive!"
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Mouse", "Rect", "Visibility", "custom_fonts" ]
+
+[node name="ColorRect" type="ColorRect" parent="." index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -2764.0
+margin_top = -749.0
+margin_right = 2142.0
+margin_bottom = 3253.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0, 0, 0, 0 )
+_sections_unfolded = [ "Mouse", "Theme" ]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect" index="0"]
+
+root_node = NodePath("..")
+autoplay = ""
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+anims/fade_to_black = SubResource( 3 )
+blend_times = [  ]
+
+[node name="NextLevel" type="Container" parent="." index="5"]
+
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -748.0
+margin_top = -108.0
+margin_right = 142.0
+margin_bottom = 17.0
+rect_min_size = Vector2( 0, 125 )
+rect_scale = Vector2( 0.65, 0.65 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 4 )
+_sections_unfolded = [ "Anchor", "Rect", "Visibility" ]
+
+[node name="Label" type="Label" parent="NextLevel" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -164.0
+margin_top = -9.0
+margin_right = 900.0
+margin_bottom = 116.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 2 )
+text = "NEXT BATHROOM"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Mouse", "Visibility", "custom_fonts" ]
+
+[node name="AnimatedSelect" type="Control" parent="NextLevel" index="1"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 911.0
+margin_top = 6.0
+margin_right = 1161.0
+margin_bottom = 131.0
+rect_min_size = Vector2( 250, 125 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Mouse" ]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="NextLevel/AnimatedSelect" index="0"]
+
+position = Vector2( 119.072, 56.9289 )
+scale = Vector2( 0.71866, 0.71866 )
+frames = SubResource( 4 )
+animation = "default"
+frame = 28
+playing = true
+_sections_unfolded = [ "Transform" ]
+
+[node name="Exit" type="Container" parent="." index="6"]
+
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 0.0
+anchor_bottom = 1.0
+margin_left = 6.0
+margin_top = -106.0
+margin_right = 896.0
+margin_bottom = 19.0
+rect_min_size = Vector2( 0, 125 )
+rect_scale = Vector2( 0.65, 0.65 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 4 )
+_sections_unfolded = [ "Anchor", "Mouse", "Rect", "Visibility" ]
+
+[node name="Label" type="Label" parent="Exit" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 42.0
+margin_top = -2.0
+margin_right = 309.0
+margin_bottom = 123.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 2 )
+text = "EXIT"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Mouse", "Visibility", "custom_fonts" ]
+
+[node name="AnimatedSelect" type="Control" parent="Exit" index="1"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 317.0
+margin_top = -8.0
+margin_right = 567.0
+margin_bottom = 117.0
+rect_min_size = Vector2( 250, 125 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Mouse" ]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Exit/AnimatedSelect" index="0"]
+
+position = Vector2( 122.027, 70.2253 )
+scale = Vector2( 0.71866, 0.71866 )
+frames = SubResource( 4 )
+animation = "default"
+frame = 17
+playing = true
+_sections_unfolded = [ "Transform" ]
+
+

@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/soapbox.obj-2ba48aa33ec90ab83ac5be2695fd5e74.mesh"
+
+[deps]
+
+files=[ "res://.import/soapbox.obj-2ba48aa33ec90ab83ac5be2695fd5e74.mesh" ]
+
+source_file="res://scenes/bathroom_3/assets/soapbox.obj"
+dest_files=[ "res://.import/soapbox.obj-2ba48aa33ec90ab83ac5be2695fd5e74.mesh", "res://.import/soapbox.obj-2ba48aa33ec90ab83ac5be2695fd5e74.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

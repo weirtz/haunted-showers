@@ -1,0 +1,86 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scripts/events/RandomEvent.cs" type="Script" id=1]
+[ext_resource path="res://scripts/utils/RandomTimer.cs" type="Script" id=2]
+[ext_resource path="res://scripts/events/ToiletGhostEvent.cs" type="Script" id=3]
+[ext_resource path="res://scripts/utils/EventTimer.cs" type="Script" id=4]
+[ext_resource path="res://scripts/events/SoundEvent.cs" type="Script" id=5]
+[ext_resource path="res://scripts/events/HotWaterBurn.cs" type="Script" id=6]
+[ext_resource path="res://scripts/events/LightsOffEvent.cs" type="Script" id=7]
+
+[node name="RandomEvent" type="Node"]
+
+editor/display_folded = true
+script = ExtResource( 1 )
+manualStart = false
+signalStart = false
+signal = "timeout"
+source = NodePath("RandomRestartDelay")
+
+[node name="RandomRestartDelay" type="Timer" parent="." index="0"]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = false
+autostart = false
+script = ExtResource( 2 )
+minWaitTime = 5
+maxWaitTime = 15
+
+[node name="ToiletGhost" type="Node" parent="." index="1"]
+
+editor/display_folded = true
+script = ExtResource( 3 )
+manualStart = true
+signalStart = false
+signal = "Null"
+source = NodePath("Null")
+toiletghostPath = NodePath("../../../../../toilet_ghost")
+
+[node name="SoundFlushDelay" type="Timer" parent="ToiletGhost" index="0"]
+
+editor/display_folded = true
+process_mode = 1
+wait_time = 0.5
+one_shot = true
+autostart = false
+script = ExtResource( 4 )
+_sections_unfolded = [ "Pause" ]
+
+[node name="SoundFlush" type="Node" parent="ToiletGhost/SoundFlushDelay" index="0"]
+
+script = ExtResource( 5 )
+manualStart = false
+signalStart = true
+signal = null
+source = null
+audioPlayerSource = NodePath("../../../../../../../Physical/Furniture/Toilet/AudioStreamPlayer3D")
+
+[node name="TriggerBurnDelay" type="Timer" parent="ToiletGhost" index="1"]
+
+editor/display_folded = true
+process_mode = 1
+wait_time = 2.0
+one_shot = true
+autostart = false
+script = ExtResource( 4 )
+
+[node name="HotWaterBurn" type="Node" parent="ToiletGhost/TriggerBurnDelay" index="0"]
+
+script = ExtResource( 6 )
+manualStart = false
+signalStart = false
+signal = "timeout"
+source = null
+cleaningEventPath = NodePath("../../../../ShowerMounted/ShowerOn/Cleaning")
+
+[node name="LightsOff" type="Node" parent="." index="2"]
+
+script = ExtResource( 7 )
+manualStart = true
+signalStart = false
+signal = null
+source = null
+lightgroupPath = NodePath("../../../../../Physical/Lights")
+
+

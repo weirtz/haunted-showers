@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/TexturesCom_Watermelon2_lp.obj-8ef1792e9898b54c5b2864f1e0f16e74.mesh"
+
+[deps]
+
+files=[ "res://.import/TexturesCom_Watermelon2_lp.obj-8ef1792e9898b54c5b2864f1e0f16e74.mesh" ]
+
+source_file="res://scenes/melonhead/TexturesCom_Watermelon2_lp.obj"
+dest_files=[ "res://.import/TexturesCom_Watermelon2_lp.obj-8ef1792e9898b54c5b2864f1e0f16e74.mesh", "res://.import/TexturesCom_Watermelon2_lp.obj-8ef1792e9898b54c5b2864f1e0f16e74.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

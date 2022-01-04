@@ -1,0 +1,202 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://scripts/events/GameEvent.cs" type="Script" id=1]
+[ext_resource path="res://scripts/events/Event.cs" type="Script" id=2]
+[ext_resource path="res://scripts/events/ShowerMounted.cs" type="Script" id=3]
+[ext_resource path="res://scripts/events/ShowerOn.cs" type="Script" id=4]
+[ext_resource path="res://scripts/events/Cleaning.cs" type="Script" id=5]
+[ext_resource path="res://scripts/events/CleaningHead.cs" type="Script" id=6]
+[ext_resource path="res://scripts/events/CleaningArmLeft.cs" type="Script" id=7]
+[ext_resource path="res://scripts/events/CleaningArmRight.cs" type="Script" id=8]
+[ext_resource path="res://scripts/events/CleaningTorso.cs" type="Script" id=9]
+[ext_resource path="res://scripts/events/CleaningLegs.cs" type="Script" id=10]
+[ext_resource path="res://scripts/events/DrainHandEvent.cs" type="Script" id=11]
+[ext_resource path="res://scripts/events/RandomEvent.cs" type="Script" id=12]
+[ext_resource path="res://scripts/utils/RandomTimer.cs" type="Script" id=13]
+[ext_resource path="res://scripts/events/ToiletGhostEvent.cs" type="Script" id=14]
+[ext_resource path="res://scripts/utils/EventTimer.cs" type="Script" id=15]
+[ext_resource path="res://scripts/events/SoundEvent.cs" type="Script" id=16]
+[ext_resource path="res://scripts/events/HotWaterBurn.cs" type="Script" id=17]
+[ext_resource path="res://scripts/events/LightsOffEvent.cs" type="Script" id=18]
+
+[node name="Game" type="Node"]
+
+editor/display_folded = true
+script = ExtResource( 1 )
+manualStart = false
+signalStart = false
+signal = null
+source = null
+
+[node name="Idle" type="Node" parent="." index="0"]
+
+editor/display_folded = true
+script = ExtResource( 2 )
+manualStart = false
+signalStart = false
+signal = null
+source = null
+
+[node name="ShowerMounted" type="Node" parent="Idle" index="0"]
+
+editor/display_folded = true
+script = ExtResource( 3 )
+manualStart = false
+signalStart = true
+signal = "entered_shower"
+source = NodePath("../../../../Player")
+
+[node name="ShowerOn" type="Node" parent="Idle/ShowerMounted" index="0"]
+
+editor/display_folded = true
+script = ExtResource( 4 )
+manualStart = false
+signalStart = true
+signal = "interact_knob"
+source = NodePath("../../../../../Player")
+
+[node name="Cleaning" type="Node" parent="Idle/ShowerMounted/ShowerOn" index="0"]
+
+editor/display_folded = true
+script = ExtResource( 5 )
+manualStart = false
+signalStart = true
+signal = "pickup_soap"
+source = NodePath("../../../../../../Player")
+
+[node name="CleaningHead" type="Node" parent="Idle/ShowerMounted/ShowerOn/Cleaning" index="0"]
+
+script = ExtResource( 6 )
+manualStart = false
+signalStart = true
+signal = "head_enter"
+source = null
+
+[node name="CleaningArmLeft" type="Node" parent="Idle/ShowerMounted/ShowerOn/Cleaning" index="1"]
+
+script = ExtResource( 7 )
+manualStart = false
+signalStart = true
+signal = "arm_L_enter"
+source = null
+
+[node name="CleaningArmRight" type="Node" parent="Idle/ShowerMounted/ShowerOn/Cleaning" index="2"]
+
+script = ExtResource( 8 )
+manualStart = false
+signalStart = true
+signal = "arm_R_enter"
+source = null
+
+[node name="CleaningTorso" type="Node" parent="Idle/ShowerMounted/ShowerOn/Cleaning" index="3"]
+
+script = ExtResource( 9 )
+manualStart = false
+signalStart = true
+signal = "torso_enter"
+source = null
+
+[node name="CleaningLegs" type="Node" parent="Idle/ShowerMounted/ShowerOn/Cleaning" index="4"]
+
+script = ExtResource( 10 )
+manualStart = false
+signalStart = true
+signal = "legs_enter"
+source = null
+
+[node name="DrainHand" type="Node" parent="Idle/ShowerMounted/ShowerOn/Cleaning" index="5"]
+
+editor/display_folded = true
+script = ExtResource( 11 )
+_sections_unfolded = [ "Pause" ]
+manualStart = false
+signalStart = false
+signal = null
+source = null
+drainhandPath = NodePath("../../../../../../../drain_hand")
+creepSpeed = 0.1
+
+[node name="DeathByHand" type="Node" parent="Idle/ShowerMounted/ShowerOn/Cleaning/DrainHand" index="0"]
+
+script = ExtResource( 2 )
+manualStart = false
+signalStart = false
+signal = "grabbed_player"
+source = null
+
+[node name="RandomEvent" type="Node" parent="Idle" index="1"]
+
+editor/display_folded = true
+script = ExtResource( 12 )
+manualStart = false
+signalStart = false
+signal = "timeout"
+source = NodePath("RandomRestartDelay")
+
+[node name="RandomRestartDelay" type="Timer" parent="Idle/RandomEvent" index="0"]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = false
+autostart = false
+script = ExtResource( 13 )
+minWaitTime = 5
+maxWaitTime = 15
+
+[node name="ToiletGhost" type="Node" parent="Idle/RandomEvent" index="1"]
+
+editor/display_folded = true
+script = ExtResource( 14 )
+manualStart = true
+signalStart = false
+signal = "Null"
+source = NodePath("Null")
+toiletghostPath = NodePath("../../../../../toilet_ghost")
+
+[node name="SoundFlushDelay" type="Timer" parent="Idle/RandomEvent/ToiletGhost" index="0"]
+
+editor/display_folded = true
+process_mode = 1
+wait_time = 0.5
+one_shot = true
+autostart = false
+script = ExtResource( 15 )
+_sections_unfolded = [ "Pause" ]
+
+[node name="SoundFlush" type="Node" parent="Idle/RandomEvent/ToiletGhost/SoundFlushDelay" index="0"]
+
+script = ExtResource( 16 )
+manualStart = false
+signalStart = true
+signal = null
+source = null
+audioPlayerSource = NodePath("../../../../../../../Physical/Furniture/Toilet/AudioStreamPlayer3D")
+
+[node name="TriggerBurnDelay" type="Timer" parent="Idle/RandomEvent/ToiletGhost" index="1"]
+
+editor/display_folded = true
+process_mode = 1
+wait_time = 2.0
+one_shot = true
+autostart = false
+script = ExtResource( 15 )
+
+[node name="HotWaterBurn" type="Node" parent="Idle/RandomEvent/ToiletGhost/TriggerBurnDelay" index="0"]
+
+script = ExtResource( 17 )
+manualStart = false
+signalStart = false
+signal = "timeout"
+source = null
+cleaningEventPath = NodePath("../../../../ShowerMounted/ShowerOn/Cleaning")
+
+[node name="LightsOff" type="Node" parent="Idle/RandomEvent" index="2"]
+
+script = ExtResource( 18 )
+manualStart = true
+signalStart = false
+signal = null
+source = null
+lightgroupPath = NodePath("../../../../../Physical/Lights")
+
+

@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/walls_v2.obj-6dc81ccf6b8fb6f01293de82e47b09f5.mesh"
+
+[deps]
+
+files=[ "res://.import/walls_v2.obj-6dc81ccf6b8fb6f01293de82e47b09f5.mesh" ]
+
+source_file="res://scenes/bathroom_5/walls_v2.obj"
+dest_files=[ "res://.import/walls_v2.obj-6dc81ccf6b8fb6f01293de82e47b09f5.mesh", "res://.import/walls_v2.obj-6dc81ccf6b8fb6f01293de82e47b09f5.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/bag.obj-3683469acc8185c1cc2809506afe2df7.mesh"
+
+[deps]
+
+files=[ "res://.import/bag.obj-3683469acc8185c1cc2809506afe2df7.mesh" ]
+
+source_file="res://scenes/bathroom_4/bag.obj"
+dest_files=[ "res://.import/bag.obj-3683469acc8185c1cc2809506afe2df7.mesh", "res://.import/bag.obj-3683469acc8185c1cc2809506afe2df7.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

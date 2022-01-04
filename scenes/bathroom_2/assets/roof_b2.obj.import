@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/roof_b2.obj-6356d9790c8554a52fbcf2d4f362da57.mesh"
+
+[deps]
+
+files=[ "res://.import/roof_b2.obj-6356d9790c8554a52fbcf2d4f362da57.mesh" ]
+
+source_file="res://scenes/bathroom_2/assets/roof_b2.obj"
+dest_files=[ "res://.import/roof_b2.obj-6356d9790c8554a52fbcf2d4f362da57.mesh", "res://.import/roof_b2.obj-6356d9790c8554a52fbcf2d4f362da57.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

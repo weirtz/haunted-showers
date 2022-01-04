@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/mirror texture test 7.obj-4c99844989739bc187bc6b45af4ff78f.mesh"
+
+[deps]
+
+files=[ "res://.import/mirror texture test 7.obj-4c99844989739bc187bc6b45af4ff78f.mesh" ]
+
+source_file="res://scenes/dev_maps_/Brendan/Assets/Models/mirror texture test 7.obj"
+dest_files=[ "res://.import/mirror texture test 7.obj-4c99844989739bc187bc6b45af4ff78f.mesh", "res://.import/mirror texture test 7.obj-4c99844989739bc187bc6b45af4ff78f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/HAND-TEXTURE.obj-f64809a40441333d93f75b49fb713391.mesh"
+
+[deps]
+
+files=[ "res://.import/HAND-TEXTURE.obj-f64809a40441333d93f75b49fb713391.mesh" ]
+
+source_file="res://scenes/dev_maps_/Brendan/HAND-TEXTURE.obj"
+dest_files=[ "res://.import/HAND-TEXTURE.obj-f64809a40441333d93f75b49fb713391.mesh", "res://.import/HAND-TEXTURE.obj-f64809a40441333d93f75b49fb713391.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

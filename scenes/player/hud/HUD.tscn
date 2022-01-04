@@ -1,0 +1,803 @@
+[gd_scene load_steps=91 format=2]
+
+[ext_resource path="res://scenes/player/hud/HUDController.cs" type="Script" id=1]
+[ext_resource path="res://assets/gui/hud/cleaning/head.png" type="Texture" id=2]
+[ext_resource path="res://assets/gui/hud/cleaning/body.png" type="Texture" id=3]
+[ext_resource path="res://assets/gui/hud/cleaning/feet.png" type="Texture" id=4]
+[ext_resource path="res://assets/gui/hud/cleaning/left.png" type="Texture" id=5]
+[ext_resource path="res://assets/gui/hud/cleaning/right.png" type="Texture" id=6]
+[ext_resource path="res://assets/gui/crosshair.png" type="Texture" id=7]
+[ext_resource path="res://assets/gui/burn_ui/burn-ui_00000.png" type="Texture" id=8]
+[ext_resource path="res://assets/gui/burn_ui/burn-ui_00001.png" type="Texture" id=9]
+[ext_resource path="res://assets/gui/burn_ui/burn-ui_00002.png" type="Texture" id=10]
+[ext_resource path="res://assets/gui/burn_ui/burn-ui_00003.png" type="Texture" id=11]
+[ext_resource path="res://assets/gui/burn_ui/burn-ui_00004.png" type="Texture" id=12]
+[ext_resource path="res://assets/gui/burn_ui/burn-ui_00005.png" type="Texture" id=13]
+[ext_resource path="res://assets/gui/burn_ui/burn-ui_00006.png" type="Texture" id=14]
+[ext_resource path="res://assets/gui/burn_ui/burn-ui_00007.png" type="Texture" id=15]
+[ext_resource path="res://assets/gui/burn_ui/burn-ui_00008.png" type="Texture" id=16]
+[ext_resource path="res://assets/gui/burn_ui/burn-ui_00009.png" type="Texture" id=17]
+[ext_resource path="res://assets/gui/burn_ui/burn-ui_00010.png" type="Texture" id=18]
+[ext_resource path="res://assets/gui/burn_ui/burn-ui_00011.png" type="Texture" id=19]
+[ext_resource path="res://assets/gui/burn_ui/burn-ui_00012.png" type="Texture" id=20]
+[ext_resource path="res://assets/gui/burn_ui/burn-ui_00013.png" type="Texture" id=21]
+[ext_resource path="res://assets/gui/burn_ui/burn-ui_00014.png" type="Texture" id=22]
+[ext_resource path="res://assets/gui/burn_ui/burn-ui_00015.png" type="Texture" id=23]
+[ext_resource path="res://assets/gui/burn_ui/burn-ui_00016.png" type="Texture" id=24]
+[ext_resource path="res://assets/gui/burn_ui/burn-ui_00017.png" type="Texture" id=25]
+[ext_resource path="res://assets/gui/burn_ui/burn-ui_00018.png" type="Texture" id=26]
+[ext_resource path="res://assets/gui/burn_ui/burn-ui_00019.png" type="Texture" id=27]
+[ext_resource path="res://assets/gui/burn_ui/burn-ui_00020.png" type="Texture" id=28]
+[ext_resource path="res://assets/gui/burn_ui/burn-ui_00021.png" type="Texture" id=29]
+[ext_resource path="res://assets/gui/burn_ui/burn-ui_00022.png" type="Texture" id=30]
+[ext_resource path="res://assets/gui/burn_ui/burn-ui_00023.png" type="Texture" id=31]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00000.png" type="Texture" id=32]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00001.png" type="Texture" id=33]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00002.png" type="Texture" id=34]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00003.png" type="Texture" id=35]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00004.png" type="Texture" id=36]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00005.png" type="Texture" id=37]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00006.png" type="Texture" id=38]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00007.png" type="Texture" id=39]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00008.png" type="Texture" id=40]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00009.png" type="Texture" id=41]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00010.png" type="Texture" id=42]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00011.png" type="Texture" id=43]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00012.png" type="Texture" id=44]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00013.png" type="Texture" id=45]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00014.png" type="Texture" id=46]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00015.png" type="Texture" id=47]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00016.png" type="Texture" id=48]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00017.png" type="Texture" id=49]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00018.png" type="Texture" id=50]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00019.png" type="Texture" id=51]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00020.png" type="Texture" id=52]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00021.png" type="Texture" id=53]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00022.png" type="Texture" id=54]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00023.png" type="Texture" id=55]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00024.png" type="Texture" id=56]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00025.png" type="Texture" id=57]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00026.png" type="Texture" id=58]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00027.png" type="Texture" id=59]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00028.png" type="Texture" id=60]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00029.png" type="Texture" id=61]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00030.png" type="Texture" id=62]
+[ext_resource path="res://assets/gui/scrub_hand/scrubbing00031.png" type="Texture" id=63]
+[ext_resource path="res://assets/gui/hud/melon-cover.png" type="Texture" id=64]
+[ext_resource path="res://assets/gui/meter/head front.png" type="Texture" id=65]
+[ext_resource path="res://assets/gui/meter/head-back.png" type="Texture" id=66]
+[ext_resource path="res://assets/gui/meter/head-middle.png" type="Texture" id=67]
+[ext_resource path="res://assets/gui/meter/body front.png" type="Texture" id=68]
+[ext_resource path="res://assets/gui/meter/chest back.png" type="Texture" id=69]
+[ext_resource path="res://assets/gui/meter/chest middle.png" type="Texture" id=70]
+[ext_resource path="res://assets/gui/meter/hand left front.png" type="Texture" id=71]
+[ext_resource path="res://assets/gui/meter/hand left back.png" type="Texture" id=72]
+[ext_resource path="res://assets/gui/meter/hand left middle.png" type="Texture" id=73]
+[ext_resource path="res://assets/gui/meter/hand right front.png" type="Texture" id=74]
+[ext_resource path="res://assets/gui/meter/hand right back.png" type="Texture" id=75]
+[ext_resource path="res://assets/gui/meter/hand right middle.png" type="Texture" id=76]
+[ext_resource path="res://assets/gui/meter/foot left front.png" type="Texture" id=77]
+[ext_resource path="res://assets/gui/meter/foot left back.png" type="Texture" id=78]
+[ext_resource path="res://assets/gui/meter/foot left middle.png" type="Texture" id=79]
+[ext_resource path="res://assets/gui/shower/shower-on.png" type="Texture" id=80]
+[ext_resource path="res://assets/gui/shower/body-part.png" type="Texture" id=81]
+[ext_resource path="res://assets/gui/shower/soap-pick-up.png" type="Texture" id=82]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ],
+"loop": true,
+"name": "default",
+"speed": 50.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+
+animations = [ {
+"frames": [ ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ) ],
+"loop": true,
+"name": "default",
+"speed": 60.0
+} ]
+
+[sub_resource type="Animation" id=3]
+
+resource_name = "put_on"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 0.25, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -4096 ), Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+
+resource_name = "body_part"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("TextureRects/texture:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 81 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("TextureRects:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 4, 0.25 ),
+"update": 0,
+"values": [ Vector2( 424, -230 ), Vector2( 424, 271 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+
+resource_name = "pickup_soap"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("TextureRects/texture:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 82 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("TextureRects:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 0.25, 1 ),
+"update": 0,
+"values": [ Vector2( 424, 271 ), Vector2( 424, -87 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+
+resource_name = "shower"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("TextureRects/texture:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 80 ) ]
+}
+
+[node name="HUD" type="CanvasLayer"]
+
+layer = 1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+script = ExtResource( 1 )
+_sections_unfolded = [ "Pause" ]
+
+[node name="BodyHints" type="CanvasLayer" parent="." index="0"]
+
+layer = 1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+_sections_unfolded = [ "Anchor", "Grow Direction", "custom_constants" ]
+
+[node name="Head" type="TextureRect" parent="BodyHints" index="0"]
+
+anchor_left = 0.5
+anchor_top = 0.0
+anchor_right = 0.5
+anchor_bottom = 0.0
+margin_left = -963.0
+margin_top = -78.0
+margin_right = 957.0
+margin_bottom = 93.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 2 )
+stretch_mode = 0
+_sections_unfolded = [ "Anchor" ]
+
+[node name="Torso" type="TextureRect" parent="BodyHints" index="1"]
+
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -1016.0
+margin_top = -93.0
+margin_right = 904.0
+margin_bottom = 88.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 3 )
+stretch_mode = 0
+_sections_unfolded = [ "Anchor", "Rect" ]
+
+[node name="Legs" type="TextureRect" parent="BodyHints" index="2"]
+
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -935.0
+margin_top = -93.0
+margin_right = 985.0
+margin_bottom = 86.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 4 )
+stretch_mode = 0
+_sections_unfolded = [ "Anchor", "Rect" ]
+
+[node name="Arm_L" type="TextureRect" parent="BodyHints" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -78.0
+margin_right = 87.0
+margin_bottom = 1080.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 5 )
+stretch_mode = 0
+_sections_unfolded = [ "Anchor", "Rect" ]
+
+[node name="Arm_R" type="TextureRect" parent="BodyHints" index="4"]
+
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -78.0
+margin_top = -540.0
+margin_right = 77.0
+margin_bottom = 540.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 6 )
+stretch_mode = 0
+_sections_unfolded = [ "Anchor", "Rect" ]
+
+[node name="GUI" type="Control" parent="." index="1"]
+
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Anchor", "Rect" ]
+
+[node name="Crosshair" type="CenterContainer" parent="GUI" index="0"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 128.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 128, 128 )
+rect_scale = Vector2( 0.25, 0.25 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+use_top_left = true
+_sections_unfolded = [ "Anchor", "Rect" ]
+
+[node name="CrosshairTexture" type="TextureRect" parent="GUI/Crosshair" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -8.0
+margin_top = -8.0
+margin_right = 8.0
+margin_bottom = 8.0
+rect_min_size = Vector2( 16, 16 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 4
+_sections_unfolded = [ "Rect" ]
+
+[node name="scrub-burn" type="AnimatedSprite" parent="GUI/Crosshair" index="1"]
+
+visible = false
+position = Vector2( 0.938232, 1.198 )
+scale = Vector2( 4.34718, 4.34718 )
+frames = SubResource( 1 )
+animation = "default"
+frame = 8
+playing = true
+
+[node name="scrub-ui" type="AnimatedSprite" parent="GUI/Crosshair" index="2"]
+
+visible = false
+position = Vector2( 0.938232, 1.198 )
+scale = Vector2( 2.15604, 2.15604 )
+frames = SubResource( 2 )
+animation = "default"
+frame = 26
+playing = true
+_sections_unfolded = [ "Transform", "Z Index" ]
+
+[node name="MelonOverlay" type="Control" parent="GUI" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = -4096.0
+margin_right = 40.0
+margin_bottom = -4056.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Mouse", "Rect" ]
+
+[node name="TextureRect" type="TextureRect" parent="GUI/MelonOverlay" index="0"]
+
+modulate = Color( 2, 2, 2, 1 )
+self_modulate = Color( 2, 2, 2, 1 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -2702.0
+margin_top = -1114.0
+margin_right = 2754.0
+margin_bottom = 1206.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 64 )
+stretch_mode = 0
+_sections_unfolded = [ "Mouse", "Rect", "Visibility" ]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="GUI/MelonOverlay" index="1"]
+
+root_node = NodePath("..")
+autoplay = ""
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+anims/put_on = SubResource( 3 )
+blend_times = [  ]
+
+[node name="BodyProgress" type="Control" parent="." index="2"]
+
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 0.0
+anchor_bottom = 1.0
+margin_left = 29.0
+margin_top = -148.0
+margin_right = 1222.0
+margin_bottom = 1177.0
+rect_scale = Vector2( 0.5, 0.5 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Anchor", "Rect", "custom_constants" ]
+
+[node name="Head" type="TextureRect" parent="BodyProgress" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 65 )
+stretch_mode = 0
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Head" type="TextureProgress" parent="BodyProgress/Head" index="0"]
+
+self_modulate = Color( 0.483154, 1, 0.09375, 0.292824 )
+show_behind_parent = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 152.0
+margin_bottom = 227.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+min_value = 0.0
+max_value = 100.0
+step = 1.0
+page = 0.0
+value = 100.0
+exp_edit = false
+rounded = false
+texture_under = ExtResource( 66 )
+texture_over = null
+texture_progress = ExtResource( 67 )
+fill_mode = 3
+radial_fill_degrees = 360.0
+radial_center_offset = Vector2( 0, 0 )
+nine_patch_stretch = false
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="Torso" type="TextureRect" parent="BodyProgress" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 196.0
+margin_top = -1.0
+margin_right = 381.0
+margin_bottom = 228.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 68 )
+stretch_mode = 0
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Torso" type="TextureProgress" parent="BodyProgress/Torso" index="0"]
+
+self_modulate = Color( 0.483154, 1, 0.09375, 0.292824 )
+show_behind_parent = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 183.0
+margin_bottom = 227.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+min_value = 0.0
+max_value = 100.0
+step = 1.0
+page = 0.0
+value = 100.0
+exp_edit = false
+rounded = false
+texture_under = ExtResource( 69 )
+texture_over = null
+texture_progress = ExtResource( 70 )
+fill_mode = 3
+radial_fill_degrees = 360.0
+radial_center_offset = Vector2( 0, 0 )
+nine_patch_stretch = false
+_sections_unfolded = [ "Rect", "Textures", "Visibility" ]
+
+[node name="Arm_L" type="TextureRect" parent="BodyProgress" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 420.0
+margin_right = 637.0
+margin_bottom = 224.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 71 )
+stretch_mode = 0
+_sections_unfolded = [ "Rect", "Visibility" ]
+
+[node name="Arm_L" type="TextureProgress" parent="BodyProgress/Arm_L" index="0"]
+
+self_modulate = Color( 0.483154, 1, 0.09375, 0.292824 )
+show_behind_parent = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 215.0
+margin_bottom = 227.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+min_value = 0.0
+max_value = 100.0
+step = 1.0
+page = 0.0
+value = 100.0
+exp_edit = false
+rounded = false
+texture_under = ExtResource( 72 )
+texture_over = null
+texture_progress = ExtResource( 73 )
+fill_mode = 3
+radial_fill_degrees = 360.0
+radial_center_offset = Vector2( 0, 0 )
+nine_patch_stretch = false
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="Arm_R" type="TextureRect" parent="BodyProgress" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 668.0
+margin_right = 885.0
+margin_bottom = 224.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 74 )
+stretch_mode = 0
+
+[node name="Arm_R" type="TextureProgress" parent="BodyProgress/Arm_R" index="0"]
+
+self_modulate = Color( 0.483154, 1, 0.09375, 0.292824 )
+show_behind_parent = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 215.0
+margin_bottom = 227.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+min_value = 0.0
+max_value = 100.0
+step = 1.0
+page = 0.0
+value = 100.0
+exp_edit = false
+rounded = false
+texture_under = ExtResource( 75 )
+texture_over = null
+texture_progress = ExtResource( 76 )
+fill_mode = 3
+radial_fill_degrees = 360.0
+radial_center_offset = Vector2( 0, 0 )
+nine_patch_stretch = false
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="Legs" type="TextureRect" parent="BodyProgress" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 872.0
+margin_right = 1102.0
+margin_bottom = 229.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 77 )
+stretch_mode = 0
+
+[node name="Legs" type="TextureProgress" parent="BodyProgress/Legs" index="0"]
+
+self_modulate = Color( 0.483154, 1, 0.09375, 0.292824 )
+show_behind_parent = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 228.0
+margin_bottom = 227.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+min_value = 0.0
+max_value = 100.0
+step = 1.0
+page = 0.0
+value = 100.0
+exp_edit = false
+rounded = false
+texture_under = ExtResource( 78 )
+texture_over = null
+texture_progress = ExtResource( 79 )
+fill_mode = 3
+radial_fill_degrees = 360.0
+radial_center_offset = Vector2( 0, 0 )
+nine_patch_stretch = false
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="PopUps" type="Control" parent="." index="3"]
+
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -960.0
+margin_top = -240.0
+margin_right = -920.0
+margin_bottom = -200.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Anchor", "Grow Direction", "Mouse", "Rect" ]
+
+[node name="TextureRects" type="VBoxContainer" parent="PopUps" index="0"]
+
+modulate = Color( 1, 1, 1, 0.509804 )
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 384.0
+margin_top = 231.0
+margin_right = 1102.0
+margin_bottom = 765.0
+rect_scale = Vector2( 0.75, 0.75 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+alignment = 2
+_sections_unfolded = [ "Anchor", "Rect", "Visibility" ]
+
+[node name="texture" type="TextureRect" parent="PopUps/TextureRects" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 54.0
+margin_right = 718.0
+margin_bottom = 534.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 80 )
+stretch_mode = 5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="PopUps" index="1"]
+
+root_node = NodePath("..")
+autoplay = ""
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+anims/body_part = SubResource( 4 )
+anims/hide = SubResource( 5 )
+anims/pickup_soap = SubResource( 6 )
+anims/show = SubResource( 7 )
+anims/shower = SubResource( 8 )
+blend_times = [  ]
+
+
