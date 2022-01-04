@@ -1,3 +1,5 @@
+![This is an image](https://i.imgur.com/odZeI9n.png)
+
 # haunted-showers
 A Silly/Spooky game made in Godot Game Engine
 
