@@ -15,3 +15,6 @@ dest_files=[ "res://.import/soap.obj-9810556e10f69bfb9d6e2d337a617adb.mesh", "re
 
 generate_tangents=true
 scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

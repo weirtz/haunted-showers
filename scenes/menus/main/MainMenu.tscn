@@ -136,7 +136,7 @@ mouse_filter = 2
 position = Vector2( 122.027, 70.2253 )
 scale = Vector2( 0.71866, 0.71866 )
 frames = SubResource( 2 )
-frame = 29
+frame = 13
 playing = true
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/Container"]
@@ -165,7 +165,7 @@ mouse_filter = 2
 position = Vector2( 122.027, 70.2253 )
 scale = Vector2( 0.71866, 0.71866 )
 frames = SubResource( 4 )
-frame = 30
+frame = 14
 playing = true
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="CanvasLayer/Container"]
@@ -194,7 +194,7 @@ mouse_filter = 2
 position = Vector2( 122.027, 70.2253 )
 scale = Vector2( 0.71866, 0.71866 )
 frames = SubResource( 4 )
-frame = 29
+frame = 13
 playing = true
 
 [node name="HBoxContainer4" type="HBoxContainer" parent="CanvasLayer/Container"]
@@ -223,7 +223,7 @@ mouse_filter = 2
 position = Vector2( 122.027, 70.2253 )
 scale = Vector2( 0.71866, 0.71866 )
 frames = SubResource( 4 )
-frame = 28
+frame = 12
 playing = true
 
 [node name="Title" type="Label" parent="CanvasLayer"]

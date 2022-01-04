@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
+[ext_resource path="res://scenes/menus/boot/Splash.cs" type="Script" id=1]
 [ext_resource path="res://assets/splash/white.png" type="Texture" id=2]
 [ext_resource path="res://assets/splash/Asset 31.png" type="Texture" id=3]
 [ext_resource path="res://assets/splash/Asset 41.png" type="Texture" id=4]
@@ -21,6 +22,7 @@ tracks/0/keys = {
 }
 
 [node name="Splash" type="CanvasLayer"]
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_vertical_guides_": [  ]
 }
@@ -84,3 +86,5 @@ autostart = true
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
 volume_db = 24.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

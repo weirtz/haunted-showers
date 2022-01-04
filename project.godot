@@ -15,7 +15,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Haunted Showers"
-run/main_scene="res://scenes/menus/main/MainMenu.tscn"
+run/main_scene="res://scenes/menus/boot/Splash.tscn"
 boot_splash/image="res://assets/splash/white.png"
 boot_splash/bg_color=Color( 1, 1, 1, 1 )
 config/icon="res://icon.png"

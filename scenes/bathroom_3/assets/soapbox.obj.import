@@ -15,3 +15,6 @@ dest_files=[ "res://.import/soapbox.obj-2ba48aa33ec90ab83ac5be2695fd5e74.mesh", 
 
 generate_tangents=true
 scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286
