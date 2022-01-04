@@ -1,0 +1,68 @@
+﻿<Project Sdk="Godot.NET.Sdk/3.3.0">
+  <PropertyGroup>
+    <ProjectGuid>{40A15DD0-898F-4FD4-823B-071C99391476}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Haunted Showers</RootNamespace>
+    <AssemblyName>Haunted Showers</AssemblyName>
+    <TargetFramework>net472</TargetFramework>
+    <!--The following properties were overriden during migration to prevent errors.
+    Enabling them may require other manual changes to the project and its files.-->
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Deterministic>false</Deterministic>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="assets\light_switch\LightSwitch.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="scenes\bathroom_1\scripts\Shower.cs" />
+    <Compile Include="scenes\bathroom_2\Shower2.cs" />
+    <Compile Include="scenes\bathroom_3\scripts\Shower3.cs" />
+    <Compile Include="scenes\dev_maps_\Sebastian\Prototype\scripts\TestShower.cs" />
+    <Compile Include="scenes\Environment.cs" />
+    <Compile Include="scenes\melonhead\scripts\Melonhead.cs" />
+    <Compile Include="scenes\menus\boot\Splash.cs" />
+    <Compile Include="scenes\menus\ingame\LevelComplete.cs" />
+    <Compile Include="scenes\menus\ingame\PauseMenu.cs" />
+    <Compile Include="scenes\menus\loading\LoadingScreen.cs" />
+    <Compile Include="scenes\menus\main\MainMenu.cs" />
+    <Compile Include="scenes\objects\lamp\Lamp.cs" />
+    <Compile Include="scenes\objects\melon_mask\MelonMask.cs" />
+    <Compile Include="scenes\player\hud\HUDController.cs" />
+    <Compile Include="scenes\player\scripts\Body.cs" />
+    <Compile Include="scenes\player\scripts\HeadCamera.cs" />
+    <Compile Include="scenes\player\scripts\Player.cs" />
+    <Compile Include="scripts\EventHandler.cs" />
+    <Compile Include="scripts\events\Cleaning.cs" />
+    <Compile Include="scripts\events\CleaningArmLeft.cs" />
+    <Compile Include="scripts\events\CleaningArmRight.cs" />
+    <Compile Include="scripts\events\CleaningBodyPart.cs" />
+    <Compile Include="scripts\events\CleaningHead.cs" />
+    <Compile Include="scripts\events\CleaningLegs.cs" />
+    <Compile Include="scripts\events\CleaningTorso.cs" />
+    <Compile Include="scripts\events\DrainHandEvent.cs" />
+    <Compile Include="scripts\events\Event.cs" />
+    <Compile Include="scripts\events\GameEvent.cs" />
+    <Compile Include="scripts\events\HotWaterBurn.cs" />
+    <Compile Include="scripts\events\Idle.cs" />
+    <Compile Include="scripts\events\ShowerMounted.cs" />
+    <Compile Include="scripts\events\ShowerOn.cs" />
+    <Compile Include="scripts\events\SoundEvent.cs" />
+    <Compile Include="scripts\events\ToiletGhostEvent.cs" />
+    <Compile Include="scripts\gui\CustomButton.cs" />
+    <Compile Include="scripts\autoload\Game.cs" />
+    <Compile Include="scripts\events\RandomEvent.cs" />
+    <Compile Include="scripts\gui\TokenTextLabel.cs" />
+    <Compile Include="scripts\events\LightsOffEvent.cs" />
+    <Compile Include="scripts\Knob.cs" />
+    <Compile Include="scripts\utils\CustomAnimTreePlayer.cs" />
+    <Compile Include="scripts\utils\CustomSkeleton.cs" />
+    <Compile Include="scripts\BaseShower.cs" />
+    <Compile Include="scripts\Grabbable.cs" />
+    <Compile Include="scripts\utils\EventTimer.cs" />
+    <Compile Include="scripts\utils\LightGroup.cs" />
+    <Compile Include="scripts\utils\RandomTimer.cs" />
+  </ItemGroup>
+</Project>
