@@ -34,7 +34,8 @@ public class Game : Node
 	{
 		var saveGame = new File();
 
-		saveGame.Open("user://game.dat", File.ModeFlags.Write);
+		//saveGame.Open("user://game.dat", File.ModeFlags.Write);
+		saveGame.OpenEncryptedWithPass("user://game.dat", File.ModeFlags.Write, "nullistruenullisgood");
 		
 		var saveNodes = GetTree().GetNodesInGroup("Persist");
 
@@ -45,39 +46,7 @@ public class Game : Node
 		}
 		saveGame.Close();
 		GD.Print("GAME: Saved");
-		/*
-		if (saveGame.FileExists("user://game.dat"))
-		{
-			saveGame.Open("user://game.dat", (int)File.ModeFlags.ReadWrite);
-			var saveNodes = GetTree().GetNodesInGroup("Persist");
 
-			foreach (Node saveNode in saveNodes)
-			{
-				var currentLine = saveGame.GetLine();
-				if (!currentLine.Contains(saveNode.GetPath()))
-				{
-					saveGame.SeekEnd();
-				}
-					
-				var nodeData = saveNode.Call("Save", this);
-				saveGame.StoreLine(JSON.Print(nodeData));
-			}
-			saveGame.Close();
-			GD.Print("GAME: Saved");
-		} else
-		{
-			saveGame.Open("user://game.dat", (int)File.ModeFlags.Write);
-			var saveNodes = GetTree().GetNodesInGroup("Persist");
-
-			foreach (Node saveNode in saveNodes)
-			{
-				var nodeData = saveNode.Call("Save", this);
-				saveGame.StoreLine(JSON.Print(nodeData));
-			}
-			saveGame.Close();
-			GD.Print("GAME: Saved");
-		}
-		*/
 	}
 			/*added string, object */
 	public Dictionary<string, object> GetSaveDictionary(Node saveNode)
@@ -86,6 +55,7 @@ public class Game : Node
 		helper.SetScript(ResourceLoader.Load("res://scripts/autoload/load_helper.gd"));
 		var path = saveNode.GetPath().ToString();
 		var dict = helper.Call("get_save_dict", "path", path);
+		//var dict = helper.Call("path", path);
 		helper.QueueFree();
 		return (Dictionary<string, object>)dict;
 	}
@@ -194,8 +164,8 @@ public class Game : Node
 			// Load the file line by line and process that dictionary to restore the object it represents
 			// saveGame.OpenEncryptedWithPass("user://game.dat", (int)File.ModeFlags.Read, "nullistruenullisgood");
 			//	                              removed (int) \/	
-			//saveGame.OpenEncryptedWithPass("user://game.dat", File.ModeFlags.Read, "nullistruenullisgood");
-			saveGame.Open("user://game.dat", File.ModeFlags.Read);
+			saveGame.OpenEncryptedWithPass("user://game.dat", File.ModeFlags.Read, "nullistruenullisgood");
+			//saveGame.Open("user://game.dat", File.ModeFlags.Read);
 
 			//Scan line by line
 			while (!saveGame.EofReached())

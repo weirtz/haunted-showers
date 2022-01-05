@@ -32,7 +32,6 @@ margin_left = 762.0
 margin_top = 425.0
 margin_right = 1158.0
 margin_bottom = 655.0
-rect_scale = Vector2( 0.235, 0.235 )
 rect_pivot_offset = Vector2( 195.804, 114.685 )
 texture = ExtResource( 3 )
 __meta__ = {

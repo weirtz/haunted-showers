@@ -42,8 +42,8 @@ public class MainMenu : Control
 	{
 		Game game = (Game)GetNode("/root/Game");
 		game.next_level = "res://scenes/bathroom_1/scene_1.tscn";
-		game.isFirstLaunch = false;
-		game.SaveNodes();
+		game.isFirstLaunch = true;
+		//game.SaveNodes();
 		game.BackgroundLoadScene(game.next_level);
 	}
 
