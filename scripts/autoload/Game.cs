@@ -194,8 +194,8 @@ public class Game : Node
 			// Load the file line by line and process that dictionary to restore the object it represents
 			// saveGame.OpenEncryptedWithPass("user://game.dat", (int)File.ModeFlags.Read, "nullistruenullisgood");
 			//	                              removed (int) \/	
-			saveGame.OpenEncryptedWithPass("user://game.dat", File.ModeFlags.Read, "nullistruenullisgood");
-			//saveGame.Open("user://game.dat", (int)File.ModeFlags.Read);
+			//saveGame.OpenEncryptedWithPass("user://game.dat", File.ModeFlags.Read, "nullistruenullisgood");
+			saveGame.Open("user://game.dat", File.ModeFlags.Read);
 
 			//Scan line by line
 			while (!saveGame.EofReached())
