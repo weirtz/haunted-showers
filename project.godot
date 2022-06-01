@@ -22,8 +22,8 @@ config/icon="res://icon.png"
 
 [autoload]
 
-LoadHelper="*res://scripts/autoload/load_helper.gd"
 Game="*res://scripts/autoload/Game.cs"
+load_helper="*res://scripts/autoload/load_helper.gd"
 
 [display]
 
@@ -141,3 +141,7 @@ stomp={
 [physics]
 
 3d/default_gravity=32.0
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/3DLayer.obj-66b136971aec808daaf21cae3ed11e94.mesh"
+
+[deps]
+
+files=[ "res://.import/3DLayer.obj-66b136971aec808daaf21cae3ed11e94.mesh" ]
+
+source_file="res://assets/artboards/3DLayer.obj"
+dest_files=[ "res://.import/3DLayer.obj-66b136971aec808daaf21cae3ed11e94.mesh", "res://.import/3DLayer.obj-66b136971aec808daaf21cae3ed11e94.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

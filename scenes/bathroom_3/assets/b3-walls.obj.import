@@ -15,6 +15,3 @@ dest_files=[ "res://.import/b3-walls.obj-fe94af2e9d524cac67edea2c642e278d.mesh",
 
 generate_tangents=true
 scale_mesh=Vector3( 1, 1, 1 )
-offset_mesh=Vector3( 0, 0, 0 )
-octahedral_compression=true
-optimize_mesh_flags=4286

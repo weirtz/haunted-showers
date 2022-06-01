@@ -15,6 +15,3 @@ dest_files=[ "res://.import/rim1.obj-aa19129a34fcbd1f8a8cc75c5bcf26cd.mesh", "re
 
 generate_tangents=true
 scale_mesh=Vector3( 1, 1, 1 )
-offset_mesh=Vector3( 0, 0, 0 )
-octahedral_compression=true
-optimize_mesh_flags=4286

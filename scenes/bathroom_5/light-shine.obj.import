@@ -15,6 +15,3 @@ dest_files=[ "res://.import/light-shine.obj-989110762781d15652734b846e64f673.mes
 
 generate_tangents=true
 scale_mesh=Vector3( 1, 1, 1 )
-offset_mesh=Vector3( 0, 0, 0 )
-octahedral_compression=true
-optimize_mesh_flags=4286

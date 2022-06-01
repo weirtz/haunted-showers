@@ -15,6 +15,3 @@ dest_files=[ "res://.import/b3.obj-f9f219561d811a7d790f00b8c09c2562.mesh", "res:
 
 generate_tangents=true
 scale_mesh=Vector3( 1, 1, 1 )
-offset_mesh=Vector3( 0, 0, 0 )
-octahedral_compression=true
-optimize_mesh_flags=4286

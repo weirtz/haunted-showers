@@ -1,5 +1,6 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
+[ext_resource path="res://scenes/objects/lamp/Lamp.cs" type="Script" id=1]
 [ext_resource path="res://scenes/bathroom_1/assets/Glass_001.material" type="Material" id=2]
 [ext_resource path="res://scenes/bathroom_1/assets/Holder_001.material" type="Material" id=3]
 [ext_resource path="res://assets/textures/metal/aluminum/TexturesCom_Metal_AluminumBrushed2_1K_albedo.jpg" type="Texture" id=4]
@@ -13,33 +14,175 @@
 [ext_resource path="res://assets/sounds/torch/torch.ogg" type="AudioStream" id=12]
 
 [sub_resource type="SpatialMaterial" id=1]
+
 resource_name = "Holder.001"
+render_priority = 0
+flags_transparent = false
+flags_unshaded = false
+flags_vertex_lighting = false
+flags_no_depth_test = false
+flags_use_point_size = false
+flags_world_triplanar = false
+flags_fixed_size = false
+flags_albedo_tex_force_srgb = false
+vertex_color_use_as_albedo = false
+vertex_color_is_srgb = false
+params_diffuse_mode = 0
+params_specular_mode = 0
+params_blend_mode = 0
+params_cull_mode = 0
+params_depth_draw_mode = 0
+params_line_width = 1.0
+params_point_size = 1.0
+params_billboard_mode = 0
+params_grow = false
+params_use_alpha_scissor = false
 albedo_color = Color( 0.347447, 0.141623, 0.0503362, 1 )
 metallic = 0.61
+metallic_specular = 0.5
+metallic_texture_channel = 0
 roughness = 0.0
+roughness_texture_channel = 0
+emission_enabled = false
+normal_enabled = false
+rim_enabled = false
+clearcoat_enabled = false
+anisotropy_enabled = false
+ao_enabled = false
+depth_enabled = false
+subsurf_scatter_enabled = false
+transmission_enabled = false
+refraction_enabled = false
+detail_enabled = false
+uv1_scale = Vector3( 1, 1, 1 )
+uv1_offset = Vector3( 0, 0, 0 )
+uv1_triplanar = false
+uv1_triplanar_sharpness = 1.0
+uv2_scale = Vector3( 1, 1, 1 )
+uv2_offset = Vector3( 0, 0, 0 )
+uv2_triplanar = false
+uv2_triplanar_sharpness = 1.0
+proximity_fade_enable = false
+distance_fade_enable = false
+_sections_unfolded = [ "Metallic", "Parameters", "Roughness" ]
 
 [sub_resource type="SpatialMaterial" id=2]
+
 resource_name = "Holder_001"
+render_priority = 0
+flags_transparent = false
+flags_unshaded = false
+flags_vertex_lighting = false
+flags_no_depth_test = false
+flags_use_point_size = false
+flags_world_triplanar = false
+flags_fixed_size = false
+flags_albedo_tex_force_srgb = false
+vertex_color_use_as_albedo = false
+vertex_color_is_srgb = false
+params_diffuse_mode = 0
+params_specular_mode = 0
+params_blend_mode = 0
+params_cull_mode = 0
+params_depth_draw_mode = 0
+params_line_width = 1.0
+params_point_size = 1.0
+params_billboard_mode = 0
+params_grow = false
+params_use_alpha_scissor = false
 albedo_color = Color( 0.414063, 0.400718, 0.258789, 1 )
 albedo_texture = ExtResource( 4 )
 metallic = 0.42
 metallic_specular = 1.0
 metallic_texture = ExtResource( 5 )
+metallic_texture_channel = 0
 roughness = 0.82
 roughness_texture = ExtResource( 6 )
+roughness_texture_channel = 0
+emission_enabled = false
+normal_enabled = false
+rim_enabled = false
+clearcoat_enabled = false
+anisotropy_enabled = false
+ao_enabled = false
+depth_enabled = false
+subsurf_scatter_enabled = false
+transmission_enabled = false
+refraction_enabled = false
+detail_enabled = false
+uv1_scale = Vector3( 1, 1, 1 )
+uv1_offset = Vector3( 0, 0, 0 )
+uv1_triplanar = false
+uv1_triplanar_sharpness = 1.0
+uv2_scale = Vector3( 1, 1, 1 )
+uv2_offset = Vector3( 0, 0, 0 )
+uv2_triplanar = false
+uv2_triplanar_sharpness = 1.0
+proximity_fade_enable = false
+distance_fade_enable = false
+_sections_unfolded = [ "Albedo", "Metallic", "Parameters", "Roughness" ]
 
 [sub_resource type="SpatialMaterial" id=80]
+
+render_priority = 0
+flags_transparent = false
+flags_unshaded = false
+flags_vertex_lighting = false
+flags_no_depth_test = false
+flags_use_point_size = false
+flags_world_triplanar = false
+flags_fixed_size = false
+flags_albedo_tex_force_srgb = false
+vertex_color_use_as_albedo = false
+vertex_color_is_srgb = false
+params_diffuse_mode = 0
+params_specular_mode = 0
+params_blend_mode = 0
+params_cull_mode = 0
+params_depth_draw_mode = 0
+params_line_width = 1.0
+params_point_size = 1.0
+params_billboard_mode = 0
+params_grow = false
+params_use_alpha_scissor = false
+albedo_color = Color( 1, 1, 1, 1 )
 albedo_texture = ExtResource( 8 )
 metallic = 0.53
 metallic_specular = 0.0
 metallic_texture = ExtResource( 9 )
+metallic_texture_channel = 0
+roughness = 1.0
 roughness_texture = ExtResource( 11 )
+roughness_texture_channel = 0
+emission_enabled = false
 normal_enabled = true
 normal_scale = 3.58
 normal_texture = ExtResource( 10 )
+rim_enabled = false
+clearcoat_enabled = false
+anisotropy_enabled = false
+ao_enabled = false
+depth_enabled = false
+subsurf_scatter_enabled = false
+transmission_enabled = false
+refraction_enabled = false
+detail_enabled = false
 uv1_scale = Vector3( 5, 5, 5 )
+uv1_offset = Vector3( 0, 0, 0 )
+uv1_triplanar = false
+uv1_triplanar_sharpness = 1.0
+uv2_scale = Vector3( 1, 1, 1 )
+uv2_offset = Vector3( 0, 0, 0 )
+uv2_triplanar = false
+uv2_triplanar_sharpness = 1.0
+proximity_fade_enable = false
+distance_fade_enable = false
+_sections_unfolded = [ "Albedo", "Metallic", "NormalMap", "Parameters", "Roughness", "UV1" ]
 
 [sub_resource type="ArrayMesh" id=81]
+
+blend_shape_mode = 1
+custom_aabb = AABB( 0, 0, 0, 0, 0, 0 )
 surfaces/0 = {
 "aabb": AABB( -0.396995, 9.32174, -9.90182, 0.775725, 1.06723, 0.763939 ),
 "array_data": PoolByteArray( 173, 160, 49, 73, 149, 200, 0, 60, 0, 58, 112, 0, 127, 0, 0, 129, 237, 55, 227, 52, 173, 160, 25, 73, 160, 200, 0, 60, 0, 238, 125, 0, 127, 0, 0, 129, 237, 55, 100, 54, 242, 177, 25, 73, 169, 200, 0, 60, 176, 238, 96, 0, 97, 250, 80, 129, 131, 54, 100, 54, 173, 160, 4, 73, 156, 200, 0, 60, 0, 27, 124, 0, 127, 0, 0, 129, 237, 55, 177, 55, 147, 178, 4, 73, 166, 200, 0, 60, 177, 27, 95, 0, 98, 9, 79, 129, 91, 54, 177, 55, 173, 160, 243, 72, 152, 200, 0, 60, 0, 25, 124, 0, 127, 0, 0, 129, 237, 55, 103, 56, 72, 179, 243, 72, 162, 200, 0, 60, 177, 25, 95, 0, 98, 9, 79, 129, 45, 54, 103, 56, 173, 160, 202, 72, 145, 200, 0, 60, 0, 7, 126, 0, 127, 0, 0, 129, 237, 55, 171, 57, 50, 180, 202, 72, 157, 200, 0, 60, 175, 7, 97, 0, 97, 2, 81, 129, 230, 53, 171, 57, 173, 160, 178, 72, 146, 200, 0, 60, 0, 236, 125, 0, 127, 0, 0, 129, 237, 55, 106, 58, 30, 180, 178, 72, 158, 200, 0, 60, 176, 236, 95, 0, 97, 249, 80, 129, 240, 53, 106, 58, 173, 160, 169, 72, 149, 200, 0, 60, 0, 220, 121, 0, 126, 0, 0, 129, 237, 55, 182, 58, 198, 179, 169, 72, 160, 200, 0, 60, 178, 220, 93, 0, 99, 244, 78, 129, 14, 54, 182, 58, 216, 179, 49, 73, 160, 200, 0, 60, 184, 58, 86, 0, 167, 18, 169, 127, 1, 48, 227, 52, 242, 177, 25, 73, 169, 200, 0, 60, 176, 238, 96, 0, 160, 250, 174, 127, 35, 49, 100, 54, 122, 180, 25, 73, 189, 200, 0, 60, 133, 238, 21, 0, 234, 0, 131, 127, 190, 51, 100, 54, 147, 178, 4, 73, 166, 200, 0, 60, 177, 27, 95, 0, 161, 9, 174, 127, 195, 48, 177, 55, 245, 180, 4, 73, 189, 200, 0, 60, 134, 27, 21, 0, 234, 0, 131, 127, 168, 51, 177, 55, 72, 179, 243, 72, 162, 200, 0, 60, 177, 25, 95, 0, 161, 9, 174, 127, 87, 48, 103, 56, 128, 181, 243, 72, 188, 200, 0, 60, 134, 25, 21, 0, 234, 0, 131, 127, 144, 51, 103, 56, 50, 180, 202, 72, 157, 200, 0, 60, 175, 7, 97, 0, 159, 2, 175, 127, 92, 47, 171, 57, 90, 182, 202, 72, 187, 200, 0, 60, 132, 7, 22, 0, 234, 0, 131, 127, 105, 51, 171, 57, 30, 180, 178, 72, 158, 200, 0, 60, 176, 236, 95, 0, 160, 249, 174, 127, 139, 47, 106, 58, 59, 182, 178, 72, 187, 200, 0, 60, 133, 236, 21, 0, 234, 0, 131, 127, 111, 51, 106, 58, 198, 179, 169, 72, 160, 200, 0, 60, 178, 220, 93, 0, 162, 244, 172, 127, 12, 48, 182, 58, 225, 181, 169, 72, 187, 200, 0, 60, 137, 220, 21, 0, 234, 0, 131, 127, 127, 51, 182, 58, 154, 181, 202, 72, 221, 200, 0, 60, 147, 7, 193, 0, 63, 254, 146, 127, 212, 53, 171, 57, 127, 181, 178, 72, 220, 200, 0, 60, 148, 236, 194, 0, 62, 7, 146, 127, 204, 53, 106, 58, 48, 181, 169, 72, 219, 200, 0, 60, 151, 220, 196, 0, 59, 12, 145, 127, 181, 53, 182, 58, 239, 181, 49, 73, 187, 200, 0, 60, 145, 58, 19, 0, 234, 0, 131, 127, 124, 51, 227, 52, 233, 179, 25, 73, 213, 200, 0, 60, 148, 238, 194, 0, 62, 6, 146, 127, 90, 53, 100, 54, 97, 180, 4, 73, 215, 200, 0, 60, 149, 27, 194, 0, 61, 247, 146, 127, 121, 53, 177, 55, 218, 180, 243, 72, 217, 200, 0, 60, 149, 25, 194, 0, 61, 247, 146, 127, 156, 53, 103, 56, 60, 181, 49, 73, 219, 200, 0, 60, 159, 58, 200, 0, 70, 18, 153, 127, 97, 53, 227, 52, 233, 179, 25, 73, 213, 200, 0, 60, 148, 238, 194, 0, 64, 250, 147, 127, 5, 54, 100, 54, 154, 174, 25, 73, 229, 200, 0, 60, 214, 238, 138, 0, 119, 0, 213, 127, 44, 55, 100, 54, 97, 180, 4, 73, 215, 200, 0, 60, 149, 27, 194, 0, 65, 9, 148, 127, 207, 53, 177, 55, 69, 175, 4, 73, 232, 200, 0, 60, 214, 27, 140, 0, 119, 0, 213, 127, 23, 55, 177, 55, 218, 180, 243, 72, 217, 200, 0, 60, 149, 25, 194, 0, 64, 9, 148, 127, 146, 53, 103, 56, 2, 176, 243, 72, 236, 200, 0, 60, 214, 25, 140, 0, 119, 0, 213, 127, 255, 54, 103, 56, 154, 181, 202, 72, 221, 200, 0, 60, 147, 7, 193, 0, 63, 2, 147, 127, 50, 53, 171, 57, 154, 176, 202, 72, 243, 200, 0, 60, 213, 7, 137, 0, 119, 0, 213, 127, 217, 54, 171, 57, 127, 181, 178, 72, 220, 200, 0, 60, 148, 236, 194, 0, 64, 249, 147, 127, 64, 53, 106, 58, 133, 176, 178, 72, 242, 200, 0, 60, 214, 236, 139, 0, 119, 0, 213, 127, 222, 54, 106, 58, 48, 181, 169, 72, 219, 200, 0, 60, 151, 220, 196, 0, 66, 244, 149, 127, 103, 53, 182, 58, 70, 176, 169, 72, 239, 200, 0, 60, 215, 220, 142, 0, 119, 0, 213, 127, 238, 54, 182, 58, 222, 47, 178, 72, 242, 200, 0, 60, 42, 236, 139, 0, 119, 0, 43, 127, 125, 56, 106, 58, 4, 48, 202, 72, 243, 200, 0, 60, 43, 7, 137, 0, 119, 0, 43, 127, 128, 56, 171, 57, 97, 47, 169, 72, 239, 200, 0, 60, 41, 220, 142, 0, 119, 0, 43, 127, 118, 56, 182, 58, 111, 45, 25, 73, 229, 200, 0, 60, 42, 238, 138, 0, 119, 0, 43, 127, 86, 56, 100, 54, 116, 47, 49, 73, 240, 200, 0, 60, 38, 58, 151, 0, 119, 0, 43, 127, 119, 56, 227, 52, 26, 46, 4, 73, 232, 200, 0, 60, 42, 27, 140, 0, 119, 0, 43, 127, 97, 56, 177, 55, 218, 46, 243, 72, 236, 200, 0, 60, 42, 25, 140, 0, 119, 0, 43, 127, 109, 56, 103, 56, 83, 51, 25, 73, 213, 200, 0, 60, 108, 238, 194, 0, 64, 6, 109, 127, 234, 56, 100, 54, 241, 52, 49, 73, 219, 200, 0, 60, 97, 58, 200, 0, 70, 238, 103, 127, 60, 57, 227, 52, 22, 52, 4, 73, 215, 200, 0, 60, 107, 27, 194, 0, 65, 247, 108, 127, 5, 57, 177, 55, 143, 52, 243, 72, 217, 200, 0, 60, 107, 25, 194, 0, 64, 247, 108, 127, 35, 57, 103, 56, 79, 53, 202, 72, 221, 200, 0, 60, 109, 7, 193, 0, 63, 254, 109, 127, 83, 57, 171, 57, 52, 53, 178, 72, 220, 200, 0, 60, 108, 236, 194, 0, 64, 7, 109, 127, 77, 57, 106, 58, 229, 52, 169, 72, 219, 200, 0, 60, 105, 220, 196, 0, 66, 12, 107, 127, 57, 57, 182, 58, 79, 53, 202, 72, 221, 200, 0, 60, 109, 7, 193, 0, 193, 254, 146, 129, 212, 53, 171, 57, 52, 53, 178, 72, 220, 200, 0, 60, 108, 236, 194, 0, 194, 7, 146, 129, 204, 53, 106, 58, 240, 53, 178, 72, 187, 200, 0, 60, 123, 236, 21, 0, 22, 0, 131, 129, 111, 51, 106, 58, 229, 52, 169, 72, 219, 200, 0, 60, 105, 220, 196, 0, 197, 12, 145, 129, 181, 53, 182, 58, 150, 53, 169, 72, 187, 200, 0, 60, 119, 220, 21, 0, 22, 0, 131, 129, 127, 51, 182, 58, 241, 52, 49, 73, 219, 200, 0, 60, 97, 58, 200, 0, 202, 238, 143, 129, 185, 53, 227, 52, 83, 51, 25, 73, 213, 200, 0, 60, 108, 238, 194, 0, 194, 6, 146, 129, 90, 53, 100, 54, 47, 52, 25, 73, 189, 200, 0, 60, 123, 238, 21, 0, 22, 0, 131, 129, 190, 51, 100, 54, 22, 52, 4, 73, 215, 200, 0, 60, 107, 27, 194, 0, 195, 247, 146, 129, 121, 53, 177, 55, 170, 52, 4, 73, 189, 200, 0, 60, 122, 27, 21, 0, 22, 0, 131, 129, 168, 51, 177, 55, 143, 52, 243, 72, 217, 200, 0, 60, 107, 25, 194, 0, 195, 247, 146, 129, 156, 53, 103, 56, 53, 53, 243, 72, 188, 200, 0, 60, 122, 25, 21, 0, 22, 0, 131, 129, 144, 51, 103, 56, 15, 54, 202, 72, 187, 200, 0, 60, 124, 7, 22, 0, 22, 0, 131, 129, 105, 51, 171, 57, 253, 49, 4, 73, 166, 200, 0, 60, 79, 27, 95, 0, 95, 9, 174, 129, 195, 48, 177, 55, 178, 50, 243, 72, 162, 200, 0, 60, 79, 25, 95, 0, 95, 9, 174, 129, 87, 48, 103, 56, 207, 51, 202, 72, 157, 200, 0, 60, 81, 7, 97, 0, 97, 2, 175, 129, 92, 47, 171, 57, 167, 51, 178, 72, 158, 200, 0, 60, 80, 236, 95, 0, 96, 249, 174, 129, 139, 47, 106, 58, 49, 51, 169, 72, 160, 200, 0, 60, 78, 220, 93, 0, 94, 244, 172, 129, 12, 48, 182, 58, 164, 53, 49, 73, 187, 200, 0, 60, 111, 58, 19, 0, 22, 0, 131, 129, 124, 51, 227, 52, 92, 49, 25, 73, 169, 200, 0, 60, 80, 238, 96, 0, 96, 250, 174, 129, 35, 49, 100, 54, 167, 51, 178, 72, 158, 200, 0, 60, 80, 236, 95, 0, 97, 7, 176, 129, 244, 56, 106, 58, 49, 51, 169, 72, 160, 200, 0, 60, 78, 220, 93, 0, 99, 12, 178, 129, 230, 56, 182, 58, 92, 49, 25, 73, 169, 200, 0, 60, 80, 238, 96, 0, 97, 6, 176, 129, 171, 56, 100, 54, 253, 49, 4, 73, 166, 200, 0, 60, 79, 27, 95, 0, 98, 247, 177, 129, 191, 56, 177, 55, 178, 50, 243, 72, 162, 200, 0, 60, 79, 25, 95, 0, 98, 247, 177, 129, 214, 56, 103, 56, 207, 51, 202, 72, 157, 200, 0, 60, 81, 7, 97, 0, 97, 254, 175, 129, 249, 56, 171, 57, 79, 176, 49, 73, 240, 200, 0, 60, 218, 58, 151, 0, 120, 18, 223, 129, 236, 54, 126, 56, 17, 176, 49, 73, 237, 200, 0, 60, 18, 115, 50, 0, 125, 240, 249, 129, 251, 54, 147, 56, 236, 180, 49, 73, 218, 200, 0, 60, 46, 115, 26, 0, 118, 211, 246, 129, 137, 53, 46, 57, 60, 181, 49, 73, 219, 200, 0, 60, 159, 58, 200, 0, 81, 70, 189, 129, 97, 53, 35, 57, 148, 181, 49, 73, 188, 200, 0, 60, 52, 115, 247, 0, 115, 204, 4, 129, 53, 53, 28, 58, 239, 181, 49, 73, 187, 200, 0, 60, 145, 58, 19, 0, 61, 105, 35, 129, 8, 53, 32, 58, 98, 179, 49, 73, 162, 200, 0, 60, 34, 115, 215, 0, 122, 224, 11, 129, 39, 54, 238, 58, 241, 52, 49, 73, 219, 200, 0, 60, 97, 58, 200, 0, 81, 186, 67, 129, 60, 57, 35, 57, 164, 53, 49, 73, 187, 200, 0, 60, 111, 58, 19, 0, 61, 151, 221, 129, 105, 57, 32, 58, 73, 53, 49, 73, 188, 200, 0, 60, 204, 115, 247, 0, 115, 52, 252, 129, 82, 57, 28, 58, 216, 179, 49, 73, 160, 200, 0, 60, 184, 58, 86, 0, 104, 40, 60, 129, 9, 54, 255, 58, 173, 160, 49, 73, 151, 200, 0, 60, 0, 115, 203, 0, 126, 0, 0, 129, 237, 55, 64, 59, 67, 51, 49, 73, 160, 200, 0, 60, 72, 58, 86, 0, 104, 216, 196, 129, 232, 56, 255, 58, 173, 160, 49, 73, 149, 200, 0, 60, 0, 58, 112, 0, 127, 0, 0, 129, 237, 55, 87, 59, 116, 47, 49, 73, 240, 200, 0, 60, 38, 58, 151, 0, 120, 238, 33, 129, 119, 56, 126, 56, 246, 46, 49, 73, 237, 200, 0, 60, 238, 115, 50, 0, 125, 16, 7, 129, 111, 56, 147, 56, 161, 52, 49, 73, 218, 200, 0, 60, 210, 115, 26, 0, 118, 45, 10, 129, 40, 57, 46, 57, 205, 50, 49, 73, 162, 200, 0, 60, 222, 115, 215, 0, 122, 32, 245, 129, 217, 56, 238, 58, 148, 181, 49, 73, 188, 200, 0, 60, 52, 115, 247, 0, 234, 0, 131, 129, 140, 51, 227, 52, 48, 180, 28, 73, 190, 200, 0, 60, 110, 58, 237, 0, 234, 0, 131, 129, 203, 51, 59, 54, 146, 177, 28, 73, 170, 200, 0, 60, 72, 58, 170, 0, 167, 238, 168, 129, 92, 49, 59, 54, 205, 50, 49, 73, 162, 200, 0, 60, 222, 115, 215, 0, 115, 16, 207, 127, 217, 56, 227, 52, 173, 160, 49, 73, 151, 200, 0, 60, 0, 115, 203, 0, 127, 0, 0, 127, 237, 55, 227, 52, 173, 160, 28, 73, 163, 200, 0, 60, 0, 58, 144, 0, 127, 0, 0, 127, 237, 55, 59, 54, 246, 46, 49, 73, 237, 200, 0, 60, 238, 115, 50, 0, 119, 0, 43, 129, 111, 56, 227, 52, 161, 52, 49, 73, 218, 200, 0, 60, 210, 115, 26, 0, 91, 16, 86, 129, 40, 57, 227, 52, 209, 50, 28, 73, 212, 200, 0, 60, 159, 58, 56, 0, 71, 18, 103, 129, 218, 56, 59, 54, 236, 180, 49, 73, 218, 200, 0, 60, 46, 115, 26, 0, 29, 16, 134, 129, 162, 53, 227, 52, 103, 179, 28, 73, 212, 200, 0, 60, 97, 58, 56, 0, 54, 18, 143, 129, 71, 53, 59, 54, 98, 179, 49, 73, 162, 200, 0, 60, 34, 115, 215, 0, 115, 240, 49, 127, 39, 54, 227, 52, 146, 177, 28, 73, 170, 200, 0, 60, 72, 58, 170, 0, 102, 238, 72, 127, 155, 54, 59, 54, 161, 52, 49, 73, 218, 200, 0, 60, 210, 115, 26, 0, 227, 16, 134, 127, 162, 53, 227, 52, 73, 53, 49, 73, 188, 200, 0, 60, 204, 115, 247, 0, 22, 0, 131, 127, 140, 51, 227, 52, 203, 51, 28, 73, 190, 200, 0, 60, 146, 58, 237, 0, 22, 0, 131, 127, 203, 51, 59, 54, 17, 176, 49, 73, 237, 200, 0, 60, 18, 115, 50, 0, 119, 0, 213, 129, 251, 54, 227, 52, 51, 174, 28, 73, 226, 200, 0, 60, 38, 58, 105, 0, 119, 0, 213, 129, 57, 55, 59, 54, 103, 179, 28, 73, 212, 200, 0, 60, 97, 58, 56, 0, 71, 238, 153, 129, 38, 54, 59, 54, 205, 50, 49, 73, 162, 200, 0, 60, 222, 115, 215, 0, 69, 240, 151, 127, 71, 48, 227, 52, 252, 48, 28, 73, 170, 200, 0, 60, 184, 58, 170, 0, 89, 238, 168, 127, 92, 49, 59, 54, 8, 45, 28, 73, 226, 200, 0, 60, 218, 58, 105, 0, 119, 0, 43, 129, 80, 56, 59, 54, 216, 179, 49, 73, 160, 200, 0, 60, 184, 58, 86, 0, 102, 18, 73, 129, 9, 54, 227, 52, 60, 181, 49, 73, 219, 200, 0, 60, 159, 58, 200, 0, 54, 238, 143, 127, 185, 53, 227, 52, 79, 176, 49, 73, 240, 200, 0, 60, 218, 58, 151, 0, 119, 0, 213, 127, 236, 54, 227, 52, 67, 51, 49, 73, 160, 200, 0, 60, 72, 58, 86, 0, 89, 18, 169, 129, 1, 48, 227, 52, 67, 51, 49, 73, 160, 200, 0, 60, 72, 58, 86, 0, 102, 238, 183, 129, 232, 56, 227, 52, 98, 179, 49, 73, 162, 200, 0, 60, 34, 115, 215, 0, 187, 240, 151, 129, 71, 48, 227, 52, 252, 48, 28, 73, 170, 200, 0, 60, 184, 58, 170, 0, 102, 18, 184, 127, 159, 56, 59, 54, 209, 50, 28, 73, 212, 200, 0, 60, 159, 58, 56, 0, 202, 18, 143, 127, 71, 53, 59, 54, 236, 180, 49, 73, 218, 200, 0, 60, 46, 115, 26, 0, 91, 240, 170, 129, 137, 53, 227, 52 ),
@@ -118,84 +261,243 @@ surfaces/5 = {
 "skeleton_aabb": [  ],
 "vertex_count": 125
 }
+_sections_unfolded = [ "surface_1", "surface_2", "surface_3", "surface_4", "surface_5", "surface_6" ]
 
 [sub_resource type="BoxShape" id=82]
+
 extents = Vector3( 0.477339, 1.09713, 0.699697 )
 
 [sub_resource type="Curve" id=83]
+
+min_value = 0.0
+max_value = 1.0
+bake_resolution = 100
 _data = [ Vector2( 0, 1 ), 0.0, -0.660753, 0, 0, Vector2( 1, 0 ), -1.49867, 0.0, 0, 0 ]
 
 [sub_resource type="CurveTexture" id=84]
+
+flags = 4
+width = 2048
 curve = SubResource( 83 )
 
 [sub_resource type="ParticlesMaterial" id=85]
+
+render_priority = 0
+trail_divisor = 1
 emission_shape = 1
 emission_sphere_radius = 0.15
+flag_align_y = false
+flag_rotate_y = false
+flag_disable_z = false
 spread = 20.28
+flatness = 0.0
 gravity = Vector3( 0, 9.8, 0 )
+initial_velocity = 0.0
+initial_velocity_random = 0.0
+angular_velocity = 0.0
+angular_velocity_random = 0.0
 linear_accel = 2.75
+linear_accel_random = 0.0
 radial_accel = -0.51
+radial_accel_random = 0.0
+tangential_accel = 0.0
+tangential_accel_random = 0.0
+damping = 0.0
 damping_random = 1.0
+angle = 0.0
+angle_random = 0.0
+scale = 1.0
+scale_random = 0.0
 scale_curve = SubResource( 84 )
+color = Color( 1, 1, 1, 1 )
+hue_variation = 0.0
 hue_variation_random = 1.0
+anim_speed = 0.0
+anim_speed_random = 0.0
+anim_offset = 0.0
+anim_offset_random = 0.0
+anim_loop = false
+_sections_unfolded = [ "Angle", "Angular Velocity", "Color", "Damping", "Emission Shape", "Flags", "Gravity", "Hue Variation", "Initial Velocity", "Linear Accel", "Radial Accel", "Scale", "Spread", "Tangential Accel", "Trail" ]
 
 [sub_resource type="SpatialMaterial" id=86]
+
+render_priority = 0
+flags_transparent = false
+flags_unshaded = false
+flags_vertex_lighting = false
+flags_no_depth_test = false
+flags_use_point_size = false
+flags_world_triplanar = false
+flags_fixed_size = false
+flags_albedo_tex_force_srgb = false
+vertex_color_use_as_albedo = false
+vertex_color_is_srgb = false
+params_diffuse_mode = 0
+params_specular_mode = 0
+params_blend_mode = 0
+params_cull_mode = 0
+params_depth_draw_mode = 0
+params_line_width = 1.0
+params_point_size = 1.0
+params_billboard_mode = 0
+params_grow = false
+params_use_alpha_scissor = false
+albedo_color = Color( 1, 1, 1, 1 )
+metallic = 0.0
+metallic_specular = 0.5
+metallic_texture_channel = 0
 roughness = 0.0
+roughness_texture_channel = 0
 emission_enabled = true
 emission = Color( 1, 0.369873, 0.09375, 1 )
 emission_energy = 7.63
 emission_operator = 0
 emission_on_uv2 = false
+normal_enabled = false
+rim_enabled = false
+clearcoat_enabled = false
+anisotropy_enabled = false
+ao_enabled = false
+depth_enabled = false
+subsurf_scatter_enabled = false
 transmission_enabled = true
 transmission = Color( 0.570313, 0.242828, 0.242828, 1 )
+refraction_enabled = false
+detail_enabled = false
+uv1_scale = Vector3( 1, 1, 1 )
+uv1_offset = Vector3( 0, 0, 0 )
+uv1_triplanar = false
+uv1_triplanar_sharpness = 1.0
+uv2_scale = Vector3( 1, 1, 1 )
+uv2_offset = Vector3( 0, 0, 0 )
+uv2_triplanar = false
+uv2_triplanar_sharpness = 1.0
+proximity_fade_enable = false
+distance_fade_enable = false
+_sections_unfolded = [ "Albedo", "Emission", "Flags", "Parameters", "Transmission" ]
 
 [sub_resource type="SphereMesh" id=87]
+
 material = SubResource( 86 )
+custom_aabb = AABB( 0, 0, 0, 0, 0, 0 )
 radius = 0.11
 height = 0.31
+radial_segments = 64
+rings = 32
+is_hemisphere = false
 
 [node name="Lamp" type="OmniLight"]
-transform = Transform( -1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 0, 0, 0 )
+
+transform = Transform( -1, 0, 1.50996e-007, 0, 1, 0, -1.50996e-007, 0, -1, 0, 0, 0 )
+layers = 1
 light_color = Color( 1, 0.734924, 0.605469, 1 )
 light_energy = 3.0
+light_indirect_energy = 1.0
+light_negative = false
+light_specular = 0.5
+light_bake_mode = 1
+light_cull_mask = -1
 shadow_enabled = true
 shadow_color = Color( 0.59375, 0.59375, 0.59375, 1 )
 shadow_bias = 0.14
+shadow_contact = 0.0
+shadow_reverse_cull_face = false
+editor_only = false
 omni_range = 20.0
 omni_attenuation = 2.0
 omni_shadow_mode = 0
+omni_shadow_detail = 1
+script = ExtResource( 1 )
+_sections_unfolded = [ "Light", "Omni", "Shadow", "Transform" ]
 
-[node name="Lamp Mesh" type="MeshInstance" parent="."]
-transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1.43923e-06, -9.31265, -9.53157 )
+[node name="Lamp Mesh" type="MeshInstance" parent="." index="0"]
+
+transform = Transform( -1, 0, -1.50996e-007, 0, 1, 0, 1.50996e-007, 0, -1, -1.43923e-006, -9.31265, -9.53157 )
+layers = 1
+material_override = null
 cast_shadow = 0
+extra_cull_margin = 0.0
 use_in_baked_light = true
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
 mesh = SubResource( 81 )
+skeleton = NodePath("..")
 material/0 = null
 material/1 = null
 material/2 = null
 material/3 = null
 material/4 = null
 material/5 = null
+_sections_unfolded = [ "Geometry", "Transform", "material" ]
 
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Lamp Mesh"]
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Lamp Mesh" index="0"]
+
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.72788, -9.60979 )
 stream = ExtResource( 12 )
+attenuation_model = 0
 unit_db = -1.87
 unit_size = 3.5
 max_db = 1.0
+pitch_scale = 1.0
 autoplay = true
+max_distance = 0.0
+out_of_range_mode = 0
+bus = "Master"
+area_mask = 1
+emission_angle_enabled = false
+emission_angle_degrees = 45.0
+emission_angle_filter_attenuation_db = -12.0
+attenuation_filter_cutoff_hz = 5000.0
+attenuation_filter_db = -24.0
+doppler_tracking = 0
 
-[node name="StaticBody" type="StaticBody" parent="Lamp Mesh"]
+[node name="StaticBody" type="StaticBody" parent="Lamp Mesh" index="1"]
 
-[node name="CollisionShape" type="CollisionShape" parent="Lamp Mesh/StaticBody"]
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Lamp Mesh/StaticBody" index="0"]
+
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.37373, -9.60979 )
 shape = SubResource( 82 )
+disabled = false
 
-[node name="Particles" type="Particles" parent="."]
-transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0, -0.096549, 0 )
+[node name="Particles" type="Particles" parent="." index="1"]
+
+transform = Transform( -1, 0, -1.50996e-007, 0, 1, 0, 1.50996e-007, 0, -1, 0, -0.096549, 0 )
+layers = 1
+material_override = null
 cast_shadow = 0
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+emitting = true
 amount = 60
 lifetime = 0.35
+one_shot = false
+preprocess = 0.0
 speed_scale = 0.3
+explosiveness = 0.0
+randomness = 0.0
+fixed_fps = 0
+fract_delta = true
+visibility_aabb = AABB( -4, -4, -4, 8, 8, 8 )
+local_coords = true
+draw_order = 0
 process_material = SubResource( 85 )
+draw_passes = 1
 draw_pass_1 = SubResource( 87 )
+_sections_unfolded = [ "Draw Passes", "Drawing", "Geometry", "Process Material", "Time", "Transform" ]
+
+
